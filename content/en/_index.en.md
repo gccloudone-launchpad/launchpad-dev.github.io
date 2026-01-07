@@ -3,6 +3,7 @@ title: "LaunchPad"
 description: "Modern service delivery for all Canadians."
 date: 2024-10-21
 draft: false
+translationKey: homePage
 ---
 
 ## Cutting-edge solutions to propel your experimentation
