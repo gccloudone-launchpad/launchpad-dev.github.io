@@ -1,0 +1,86 @@
+<!doctype html>
+<html itemscope itemtype="http://schema.org/WebPage"
+    {{- with .Site.Language.LanguageDirection }} dir="{{ . }}" {{- end -}}
+    {{ with .Site.Language.Lang }} lang="{{ . }}" {{- end }}>
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=5.0" />
+
+    <title>
+      Page Pas Trouvé | {{ .Site.Title }}
+    </title>
+
+    <link rel="icon" href="{{ "/favicon.ico" | relURL }}" type="image/x-icon" />
+
+    {{ partial "analytics" . }}
+
+    <!-- Icons Font Awesome -->
+    {{ partial "assets/font-awesome.html" }}
+
+    <!-- GC Design System -->
+    {{ partial "assets/design-system.html" }}
+
+    {{ $styles := resources.Get "scss/main.scss" | css.Sass }}
+    <link rel="stylesheet" href="{{ $styles.Permalink }}" />
+
+    {{ $customStyles := resources.Get "scss/custom.scss" | css.Sass }}
+    <link rel="stylesheet" href="{{ $customStyles.Permalink }}" />
+
+    <style>
+      html {
+        font-size: 16px;
+      }
+      body {
+        font-size: var(--gcds-font-sizes-text);
+        line-height: var(--gcds-line-heights-text);
+        color: var(--gcds-color-grayscale-1000);
+        font-family: var(--gcds-font-families-body), sans-serif;
+        margin: 0;
+        animation: fade 0.05s forwards ease-in-out;
+      }
+    </style>
+
+    {{ partial "hooks/head-end.html" . -}}
+  </head>
+  <body style="margin: 0" {{ if (not (.Page.Params.disableCharacterLimit | default .Page.Site.Params.disableCharacterLimit)) }}class="character-limit"{{ end }}>
+
+
+  {{ partial "verify" . }}
+  <gcds-header
+  lang="{{ .Lang }}"
+  signature-variant="colour"
+  skip-to-href="#">
+  {{ partial "top-navigation" . }}
+  {{ partial "breadcrumb" . }}
+</gcds-header>
+  <gcds-container size="xl" main-container centered tag="main">
+    <gcds-grid
+      tag="section"
+      columns="1fr"
+      columns-desktop="1fr"
+      align-items="start"
+      class="hydrated">
+
+      <section class="mb-400">
+        <gcds-heading tag="h1">Page Pas Trouvé</gcds-heading>
+        <gcds-heading tag="h3">Erreur 404</gcds-heading>
+
+        <gcds-text>
+          Nous ne pouvons trouver cette page Web. Nous sommes désolés que vous ayez abouti ici.
+          Il arrive parfois qu’une page ait été déplacée ou supprimée. Heureusement, nous pouvons vous aider à trouver ce que vous cherchez.
+        </gcds-text>
+        <gcds-text>Que faire?</gcds-text>
+        <ul>
+          <li>Retournez à la <gcds-link href="/fr/">page d’accueil</gcds-link></li>
+          <li><gcds-link href="/fr/contact">Communiquez avec nous</gcds-link> pour obtenir de l’aide</li>
+        </ul>
+      </section>
+    </gcds-grid>
+  </gcds-container>
+    {{ partial "footer" . }}
+
+    {{ partial "hooks/body-end.html" . -}}
+  </body>
+</html>
