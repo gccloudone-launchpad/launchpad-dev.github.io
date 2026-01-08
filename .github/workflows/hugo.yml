@@ -30,18 +30,17 @@ jobs:
   # Build job
   build:
     runs-on: ubuntu-latest
-    env:
-      DART_SASS_VERSION: 1.96.0
-      GO_VERSION: 1.25.5
-      HUGO_VERSION: 0.152.2
-      NODE_VERSION: 24.12.0
-      TZ: America/Toronto
     steps:
       - name: Checkout
         uses: actions/checkout@v5
         with:
           submodules: recursive
           fetch-depth: 0
+      - name: Load tool versions
+        run: |
+          set -euo pipefail
+          source ./versions.env
+          cat ./versions.env >> "$GITHUB_ENV"
       - name: Setup Go
         uses: actions/setup-go@v5
         with:
