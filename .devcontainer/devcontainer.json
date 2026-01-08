@@ -2,11 +2,7 @@
   "name": "Hugo",
   "build": {
     "dockerfile": "Dockerfile",
-    "args": {
-      "GO_VERSION": "1.22.3",
-      "HUGO_VERSION": "0.126.3",
-      "NODE_VERSION": "18"
-    }
+    "context": ".."
   },
   "customizations": {
     "vscode": {

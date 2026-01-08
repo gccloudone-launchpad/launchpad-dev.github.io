@@ -1,14 +1,17 @@
 ARG NODE_VERSION=18
 FROM node:${NODE_VERSION}
 
-ARG HUGO_VERSION=0.126.3
-ARG GO_VERSION=1.22.3
+COPY versions.env /tmp/versions.env
 
 RUN apt-get update && \
     apt-get install -y ca-certificates openssl git curl make && \
     rm -rf /var/lib/apt/lists/*
 
-RUN ARCH=$(uname -m) && \
+RUN set -eu && \
+    if [ -f /tmp/versions.env ]; then \
+      set -a && . /tmp/versions.env && set +a; \
+    fi && \
+    ARCH=$(uname -m) && \
     if [ "$ARCH" = "aarch64" ]; then ARCH=arm64; else ARCH=amd64; fi && \
     echo "Architecture: $ARCH" && \
     wget -O hugo_extended_${HUGO_VERSION}.tar.gz https://github.com/gohugoio/hugo/releases/download/v${HUGO_VERSION}/hugo_extended_${HUGO_VERSION}_linux-${ARCH}.tar.gz && \
