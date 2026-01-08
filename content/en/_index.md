@@ -29,5 +29,3 @@ Tutorials
 ## What our clients are saying about LaunchPad
 
 Quotes?
-
-Does this force it to rebuild the whole site?

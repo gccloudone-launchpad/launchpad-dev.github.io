@@ -29,5 +29,3 @@ Tutorials
 ## Ce que nos clients disent à propos de la Rampe de Lacement
 
 Quotes?
-
-Does this force it to rebuild the whole site (Fr)?
