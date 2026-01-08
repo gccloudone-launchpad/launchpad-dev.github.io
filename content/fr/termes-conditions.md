@@ -1,9 +1,8 @@
 ---
 description: Termes & Conditions pour l'utilization de la Rampe de Lancement
 title: Termes & Conditions
-date: 2024-10-21
-draft: false
 translationKey: terms-and-conditions
+draft: false
 ---
 
 La plateforme d'Innovation et d'Expérimentation Infonuagique (IEI) fournit un environnement infonuagique sécurisé pour tester et explorer de nouvelles technologies. Cette plateforme est strictement réservée à des fins de développement et de recherche non opérationnelles. Les utilisateurs doivent respecter les termes suivants et s'assurer que toute personne accédant à leur environnement de travail ou d'expérimentation les respecte. Ces modalités et conditions s'ajoutent à toutes les politiques d'utilisation acceptables existantes du Gouvernement du Canada (GC) ou des ministères.

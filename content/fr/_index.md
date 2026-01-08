@@ -1,9 +1,8 @@
 ---
 title: "Rampe de Lancement"
 description: "Modern service delivery for all Canadians."
-date: 2024-10-21
-draft: false
 translationKey: homePage
+draft: false
 ---
 
 ## Solutions de pointe pour propulser votre expérimentation
