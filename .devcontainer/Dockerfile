@@ -1,4 +1,4 @@
-ARG NODE_VERSION=18
+ARG NODE_VERSION
 FROM node:${NODE_VERSION}
 
 COPY versions.env /tmp/versions.env

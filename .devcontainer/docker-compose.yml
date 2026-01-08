@@ -1,0 +1,21 @@
+services:
+  hugo-dev:
+    build:
+      context: ..
+      dockerfile: .devcontainer/Dockerfile
+      args:
+        NODE_VERSION: ${NODE_VERSION}
+    
+    env_file:
+      - ../versions.env
+      
+    command: sleep infinity
+    
+    ports:
+      - "1313:1313"
+      - "3000:3000"
+      
+    volumes:
+      - ../:/workspace:cached
+
+    user: node

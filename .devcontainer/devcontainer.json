@@ -1,9 +1,11 @@
 {
   "name": "Hugo",
-  "build": {
-    "dockerfile": "Dockerfile",
-    "context": ".."
-  },
+  "dockerComposeFile": "docker-compose.yml",
+  "service": "hugo-dev",
+  "workspaceFolder": "/workspace",
+  
+  "initializeCommand": "cp versions.env .devcontainer/.env",
+
   "customizations": {
     "vscode": {
       "settings": {
@@ -21,6 +23,5 @@
     }
   },
   "remoteUser": "node",
-  "postCreateCommand": "npm install && npm run build",
-  "forwardPorts": [1313, 3000]
+  "postCreateCommand": "npm install && npm run build"
 }
