@@ -1,0 +1,5 @@
+sidebar: false
+alpha_notice: false
+footer_display: compact
+disableCharacterLimit: true
+enablePilcrow: true

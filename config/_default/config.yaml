@@ -1,0 +1,76 @@
+baseURL: /
+title: GCCO LaunchPad
+timeZone: America/New_York
+summaryLength: 10
+disableLanguages: []
+hasCJKLanguage: false
+contentDir: content/splash
+defaultContentLanguage: splash
+defaultContentLanguageInSubdir: true
+enableGitInfo: true
+
+permalinks:
+  page:
+    pages: /:slugorcontentbasename/
+
+module:
+  mounts:
+    - source: assets
+      target: assets
+    - source: hugo_stats.json
+      target: assets/watching/hugo_stats.json
+
+build:
+  noJSConfigInAssets: false
+  useResourceCacheWhen: fallback
+  buildStats:
+    enable: true
+  cachebusters:
+    - source: assets/.*\.(js|ts|jsx|tsx)
+      target: (js|scripts|javascript)
+    - source: assets/.*\.(css|sass|scss)$
+      target: (css|styles|scss|sass)
+    - source: assets/.*\.(.*)$
+      target: $1
+
+pagination:
+  pagerSize: 5
+
+outputs:
+  home:
+    - HTML
+    - RSS
+    - WebAppManifest
+
+imaging:
+  quality: 90
+  resampleFilter: lanczos
+
+caches:
+  images:
+    dir: :resourceDir/_gen
+    maxAge: 720h
+  assets:
+    dir: :resourceDir/_gen
+    maxAge: 720h
+
+markup:
+  goldmark:
+    renderer:
+      unsafe: true
+  highlight:
+    style: monokai
+  tableOfContents:
+    startLevel: 2
+    endLevel: 5
+    ordered: true
+
+mediaTypes:
+  application/manifest+json:
+    suffixes:
+      - webmanifest
+      
+outputFormats:
+  WebAppManifest:
+    mediaType: application/manifest+json
+    rel: manifest

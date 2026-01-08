@@ -1,0 +1,21 @@
+main:
+  - name: Rampe de Lancement
+    url: /fr/
+    weight: 1
+    identifier: home
+  - name: A Propos
+    url: /fr/a-propos
+    weight: 2
+  - parent: A Propos
+    name: Termes & Conditions
+    url: /fr/termes-conditions
+    weight: 1
+  - name: Contactez Nous
+    url: /fr/contact
+    weight: 3
+  - weight: 4
+    name: Tutoriels
+    url: /fr/tutoriels
+  - parent: Tutoriels
+    name: GCDS Components
+    url: /gcds-components

@@ -1,0 +1,21 @@
+main:
+  - name: LaunchPad
+    url: /en/
+    weight: 1
+    identifier: home
+  - name: About
+    url: /en/about
+    weight: 2
+  - parent: About
+    name: Terms & Conditions
+    url: /en/terms-conditions
+    weight: 1
+  - name: Contact Us
+    url: /en/contact
+    weight: 3
+  - weight: 4
+    name: Tutorials
+    url: /en/tutorials
+  - parent: Tutorials
+    name: GCDS Components
+    url: /en/gcds-components

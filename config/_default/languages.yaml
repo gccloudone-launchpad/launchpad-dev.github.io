@@ -1,0 +1,35 @@
+splash:
+  weight: 1
+  languageName: ""
+  contentDir: content/splash
+  title: LaunchPad / Rampe de Lancement
+en:
+  disabled: false
+  languageCode: en-CA
+  languageName: English
+  contentDir: content/en
+  weight: 2
+  title: "GCCO: LaunchPad"
+  params:
+    description: Sovereign cloud hosting for the Government of Canada
+    time_format_default: 2006-01-02
+    time_format_blog: 2006-01-02
+    privacy_policy: https://intranet.canada.ca/terms-avis-eng.asp#priv
+    logos:
+      fip: logos/ssc-fip-en.svg
+      wordmark: logos/canada-wordmark.svg
+fr:
+  disabled: false
+  languageCode: fr-CA
+  languageName: Français
+  contentDir: content/fr
+  title: "SIUGC: Rampe de Lancement"
+  weight: 3
+  params:
+    description: Hébergement infonuagique souverain pour le gouvernement du Canada
+    time_format_default: 2006-01-02
+    time_format_blog: 2006-01-02
+    privacy_policy: https://intranet.canada.ca/terms-avis-fra.asp#conf
+    logos:
+      fip: logos/ssc-fip-fr.svg
+      wordmark: logos/canada-wordmark.svg
