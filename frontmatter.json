@@ -1,0 +1,61 @@
+{
+  "$schema": "https://frontmatter.codes/frontmatter.schema.json",
+  "frontMatter.taxonomy.contentTypes": [
+    {
+      "name": "default",
+      "pageBundle": false,
+      "previewPath": null,
+      "fields": [
+        {
+          "title": "Title",
+          "name": "title",
+          "type": "string"
+        },
+        {
+          "title": "Description",
+          "name": "description",
+          "type": "string"
+        },
+        {
+          "title": "Translation Key",
+          "name": "translationKey",
+          "type": "string"
+        },
+        {
+          "title": "Is draft",
+          "name": "draft",
+          "type": "draft"
+        },
+        {
+          "title": "Tags",
+          "name": "tags",
+          "type": "tags"
+        },
+        {
+          "title": "Categories",
+          "name": "categories",
+          "type": "categories"
+        }
+      ]
+    }
+  ],
+  "frontMatter.content.pageFolders": [
+    {
+      "title": "Multilingual",
+      "path": "[[workspace]]/content",
+      "defaultLocale": "splash"
+    }
+  ],
+  "frontMatter.content.i18n": [
+    {
+      "title": "English",
+      "locale": "en",
+      "path": "en"
+    },
+    {
+      "title": "French",
+      "locale": "fr",
+      "path": "fr"
+    }
+  ]
+}
