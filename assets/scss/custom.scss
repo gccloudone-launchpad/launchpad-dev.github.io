@@ -52,3 +52,26 @@ div.homepage-content {
     padding-inline-start: 40px;
   }
 }
+
+div.highlight {
+  pre {
+    font-size: 70%;
+    margin-bottom: 1em;
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+
+    code {
+      span {
+        span {
+          line-height: 110%;
+        }
+        
+      }
+    }
+  }
+}
+
+:not(pre) > code {
+  background-color: lightgrey;
+  padding: 0 5px;
+}

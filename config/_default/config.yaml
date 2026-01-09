@@ -59,7 +59,9 @@ markup:
     renderer:
       unsafe: true
   highlight:
-    style: monokai
+    style: github-dark
+    lineNos: true
+    lineNumbersInTable: false
   tableOfContents:
     startLevel: 2
     endLevel: 5
