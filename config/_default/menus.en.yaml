@@ -1,21 +1,34 @@
 main:
+#TOP LEVEL
   - name: LaunchPad
-    url: /en/
+    pageRef: /
     weight: 1
     identifier: home
+
+
+#TOP LEVEL
   - name: About
-    url: /en/about
+    identifier: about
     weight: 2
-  - parent: About
-    name: Terms & Conditions
-    url: /en/terms-conditions
+  # LEVEL 1
+  - name: About Us
+    parent: about
+    pageRef: /about-us
     weight: 1
+
+  - name: Terms & Conditions
+    parent: about
+    pageRef: /terms-conditions
+    weight: 2
+
   - name: Contact Us
-    url: /en/contact
+    parent: about
+    pageRef: /contact-us
     weight: 3
-  - weight: 4
+
+
+#TOP LEVEL
+  - weight: 3
     name: Tutorials
-    url: /en/tutorials
-  - parent: Tutorials
-    name: GCDS Components
-    url: /en/gcds-components
+    identifier: tutorials
+    pageRef: /tutorials
