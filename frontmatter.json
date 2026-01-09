@@ -1,10 +1,16 @@
 {
   "$schema": "https://frontmatter.codes/frontmatter.schema.json",
+  "frontMatter.framework.id": "hugo",
+  "frontMatter.content.publicFolder": "static",
+  "frontMatter.preview.host": "http://localhost:1313",
+  "frontMatter.taxonomy.alignFilename": true,
   "frontMatter.taxonomy.contentTypes": [
     {
       "name": "default",
       "pageBundle": false,
       "previewPath": null,
+      "slugTemplate": "{{title}}",
+      "filePrefix": "",
       "fields": [
         {
           "title": "Title",
@@ -41,21 +47,14 @@
   ],
   "frontMatter.content.pageFolders": [
     {
-      "title": "Multilingual",
-      "path": "[[workspace]]/content",
-      "defaultLocale": "splash"
-    }
-  ],
-  "frontMatter.content.i18n": [
-    {
       "title": "English",
-      "locale": "en",
-      "path": "en"
+      "defaultLocale": "en",
+      "path": "[[workspace]]/content/en"
     },
     {
       "title": "French",
-      "locale": "fr",
-      "path": "fr"
+      "defaultLocale": "fr",
+      "path": "[[workspace]]/content/fr"
     }
   ]
 }
