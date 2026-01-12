@@ -11,7 +11,7 @@ categories:
   - Tutoriels
 ---
 
-## Ajouter des certificats au magasin de confiance sur WSL
+## Contexte
 
 Lorsque vous travaillez au bureau, certains sites ont une inspection du trafic effectuée via un pontage TLS transparent (effectivement un MitM). Sous Windows, ce n'est pas un problème, car les certificats utilisés pour rechiffrer le trafic sont automatiquement ajoutés à notre magasin de certificats racine de confiance via des politiques.
 
@@ -19,11 +19,13 @@ Dans WSL, cela ne fonctionne pas, et `curl` ainsi que d'autres outils échouent 
 
 Nous pourrions simplement utiliser l'option `-k` pour `curl`, qui désactive la validation des certificats, mais la meilleure approche serait de corriger le problème sous-jacent en ajoutant le certificat non fiable (qui est probablement auto-signé) à votre magasin.
 
+## Processus Pour Ajouter Certificat
+
 ### 1.  Déterminer quel certificat échoue à la validation
 
-This can be a little complicated, and requires a bit of spelunking into the verbose output of things like `curl`, `openssl`, or the use of a handy tool called [`crip`](https://github.com/Hakky54/certificate-ripper).
+Cela peut être un peu compliqué et nécessite d'explorer la sortie détaillée de commandes comme `curl`, `openssl`, ou d'utiliser un outil pratique appelé [`crip`](https://github.com/Hakky54/certificate-ripper).
 
-This is the verbose output of trying to access `https://logdy.dev/install.sh` with `curl`:
+Voici la sortie détaillée lors de la tentative d'accès à `https://logdy.dev/install.sh` avec `curl` :
 
 ```text
 $ curl -vv https://logdy.dev/install.sh | sh
@@ -61,9 +63,9 @@ establish a secure connection to it. To learn more about this situation and
 how to fix it, please visit the web page mentioned above.
 ```
 
-You can see the error message near the bottom (`curl: (60) SSL certificate problem: self-signed certificate in certificate chain`), however it doesn't tell you which certificate in the chain is self-signed.
+Vous pouvez voir le message d'erreur près du bas (`curl: (60) SSL certificate problem: self-signed certificate in certificate chain`), mais il ne vous indique pas quel certificat dans la chaîne est auto-signé.
 
-If we use `crip` to show the certificate chain, we can see more details about the subject and issuer of each one (certificate contents snipped for brevity):
+Si nous utilisons `crip` pour afficher la chaîne de certificats, nous pouvons voir plus de détails sur le sujet et l'émetteur de chacun (contenu des certificats abrégé pour plus de clarté) :
 
 ```text
 $ crip print  -u=https://logdy.dev -f=pem
@@ -110,11 +112,11 @@ issuer=CN=GOC-GDC-ROOT-A,O=GC,C=CA
 -----END CERTIFICATE-----
 ```
 
-Looking at the output, you can see it's clearly the last one that's self-signed (same subject and issuer), and causing our issues.
+En examinant la sortie, vous pouvez voir que c'est clairement le dernier qui est auto-signé (même sujet et émetteur), et qui cause nos problèmes.
 
 ### 2.  Télécharger ce certificat
 
-Using `crip`, we can easily download all the certificates in the chain:
+Avec `crip`, nous pouvons facilement télécharger tous les certificats de la chaîne :
 
 ```text
 $ crip export pem  -u=https://logdy.dev
@@ -132,7 +134,7 @@ Extracted 4 certificates.
 It has been exported to /home/azureuser
 ```
 
-This particular situation producse 4 files, called:
+Cette situation particulière produit 4 fichiers, appelés :
 
 - `cn=goc-gdc-issuing-a1a_o=gc_c=ca.crt`
 - `cn=goc-gdc-root-a_o=gc_c=ca.crt`
@@ -141,19 +143,19 @@ This particular situation producse 4 files, called:
 
 ### 3.  Ajouter le certificat au bon dossier
 
-On Ubuntu and Debian, Certificate Authority (CA) certificates must be placed in `/usr/local/share/ca-certificates`, in order for the next step to use them.
+Sur Ubuntu et Debian, les certificats d'autorité de certification (CA) doivent être placés dans `/usr/local/share/ca-certificates`, afin que la prochaine étape puisse les utiliser.
 
-This is a protected folder, so you'll need to use `sudo`:
+C'est un dossier protégé, vous devrez donc utiliser `sudo` :
 
 ```text
 sudo mv 'cn=goc-gdc-issuing-a1a_o=gc_c=ca.crt' /usr/local/share/ca-certificates/
 ```
 
-On AlmaLinux, Rocky Linux, and other RHEL clones, you place them in `/etc/pki/ca-trust/source/anchors`.
+Sur AlmaLinux, Rocky Linux et autres clones RHEL, vous les placez dans `/etc/pki/ca-trust/source/anchors`.
 
 ### 4.  Mettre à jour le magasin de certificats de confiance de votre système d'exploitation
 
-On Ubuntu, using the `update-ca-certificates` tool is all that's required to add these custom certificates. Again, this is a privileged command, so you'll need to use *sudo* to run it.
+Sur Ubuntu, l'utilisation de l'outil `update-ca-certificates` est tout ce qui est nécessaire pour ajouter ces certificats personnalisés. Encore une fois, c'est une commande privilégiée, vous devrez donc utiliser `sudo` pour l'exécuter.
 
 ```text
 $ sudo update-ca-certificates
@@ -167,4 +169,4 @@ done.
 done.
 ```
 
-On AlmaLinux, Rocky Linux, and RHEL clones, use the `update-ca-trust` command
+Sur AlmaLinux, Rocky Linux et les clones RHEL, utilisez la commande `update-ca-trust`

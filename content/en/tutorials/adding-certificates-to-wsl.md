@@ -11,14 +11,15 @@ categories:
   - Tutorials
 ---
 
-
-## Adding Certificates to Trusted Store on WSL
+## Context
 
 When working in the office, some sites have traffic inspection done via transparent TLS bridging (effectively a MitM). On Windows this is fine, because the certificates used to re-encrypt the traffic are automatically added to our trusted root store via policies.
 
 In WSL, that doesn't work, and `curl` and other tools fail due to an un-trusted certificate in the chain.
 
 We could simply use the `-k` switch for `curl`, which disables certificate validation, but the better approach would be to fix the underlying issue by adding the untrusted certificate (which is probably self-signed) to your store.
+
+## Process to add certificate
 
 ### 1.  Determine which certificate is failing validation
 
@@ -155,7 +156,7 @@ On AlmaLinux, Rocky Linux, and other RHEL clones, you place them in `/etc/pki/ca
 
 ### 4.  Update your OS trusted certificate store
 
-On Ubuntu, using the `update-ca-certificates` tool is all that's required to add these custom certificates. Again, this is a privileged command, so you'll need to use *sudo* to run it.
+On Ubuntu, using the `update-ca-certificates` tool is all that's required to add these custom certificates. Again, this is a privileged command, so you'll need to use `sudo` to run it.
 
 ```text
 $ sudo update-ca-certificates
