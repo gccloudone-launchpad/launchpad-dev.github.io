@@ -20,11 +20,16 @@ main:
     parent: about
     pageRef: /termes-conditions
     weight: 2
+  
+  - name: Politiques
+    parent: about
+    pageRef: /politiques
+    weight: 3
 
   - name: Contactez Nous
     parent: about
     pageRef: /contactez-nous
-    weight: 3
+    weight: 4
 
 
 #TOP LEVEL

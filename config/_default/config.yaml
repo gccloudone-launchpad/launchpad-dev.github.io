@@ -8,6 +8,8 @@ contentDir: content/splash
 defaultContentLanguage: splash
 defaultContentLanguageInSubdir: true
 enableGitInfo: true
+enableEmoji: true
+disableHugoGeneratorInject: true
 
 permalinks:
   page:
@@ -56,8 +58,12 @@ caches:
 
 markup:
   goldmark:
+    table: true
     renderer:
       unsafe: true
+    parser:
+      attribute:
+        block: true
   highlight:
     style: github-dark
     lineNos: true
@@ -66,6 +72,7 @@ markup:
     startLevel: 2
     endLevel: 5
     ordered: true
+  
 
 mediaTypes:
   application/manifest+json:
