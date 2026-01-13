@@ -56,5 +56,44 @@
       "defaultLocale": "fr",
       "path": "[[workspace]]/content/fr"
     }
-  ]
+  ],
+  "frontMatter.content.snippets": {
+    "GCDS - Notice": {
+      "description": "",
+      "body": [
+        "{{% notice type=\"[[Type]]\" title=\"[[Title]]\" %}}",
+        "[[Content]]",
+        "{{% /notice %}}"
+      ],
+      "fields": [
+        {
+          "name": "Type",
+          "title": "Type",
+          "type": "choice",
+          "single": true,
+          "default": "info",
+          "choices": [
+            "info",
+            "warning",
+            "danger",
+            "success"
+          ]
+        },
+        {
+          "name": "Title",
+          "title": "Title",
+          "type": "string",
+          "single": true,
+          "default": "Note"
+        },
+        {
+          "name": "Content",
+          "title": "Content",
+          "type": "string",
+          "single": true,
+          "default": ""
+        }
+      ]
+    }
+  }
 }

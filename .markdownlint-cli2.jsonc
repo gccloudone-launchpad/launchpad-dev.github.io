@@ -41,6 +41,7 @@
         "details",
         "summary",
         "gcds-alert",
+        "gcds-notice",
         "gcds-grid",
         "gcds-link",
         "gcds-top-nav",
