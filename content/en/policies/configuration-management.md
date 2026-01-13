@@ -9,6 +9,8 @@ categories:
   - Policy
 ---
 
+{{< translation-note >}}
+
 ## Purpose
 
 To ensure that Information Technology (IT) resources are inventoried and configured in compliance with IT security policies, standards, and procedures.

@@ -9,6 +9,8 @@ categories:
   - Policy
 ---
 
+{{< translation-note >}}
+
 ## Purpose
 
 To ensure that Information Technology (IT) resources and information systems are established with effective security controls and control enhancements that reflect applicable federal and state laws, Executive Orders, directives, regulations, policies, standards, and guidance.

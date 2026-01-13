@@ -9,6 +9,8 @@ categories:
   - Policy
 ---
 
+{{< translation-note >}}
+
 ## Purpose
 
 To ensure that only properly identified and authenticated users and devices are granted access to Information Technology (IT) resources in compliance with IT security policies, standards, and procedures.

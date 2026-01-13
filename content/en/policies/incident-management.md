@@ -9,6 +9,8 @@ categories:
   - Policy
 ---
 
+{{< translation-note >}}
+
 ## Purpose
 
 Incident response includes planning for and actively managing incidents that can prevent an enterprise from leveraging its assets to meet its goals. Most commonly this takes the form of unauthorized access into a computer system, physical security intrusions, or if a natural disaster occurs. The *Incident Response Policy* provides the processes and procedures for ensuring incidents are properly handled with as little impact to the enterprise as possible, and to begin the recovery plan. This policy applies to all departments and all assets connected to the enterprise network.

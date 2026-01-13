@@ -9,6 +9,8 @@ categories:
   - Policy
 ---
 
+{{< translation-note >}}
+
 ## Open Source Software Standards & Guidance
 
 Anyone planning on using or creating an open source project should become familiar with the links below.
