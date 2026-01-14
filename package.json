@@ -1,18 +1,20 @@
 {
-  "name": "gcds-hugo-variant",
-  "description": "GC Design System components are user interface building blocks that address different user objectives.",
+  "name": "gcco-launchpad-website",
+  "description": "Public facing documentation website for the SSC GC Cloud One: LaunchPad service",
   "version": "0.1.0",
   "license": "MIT",
-  "author": "Aurora",
+  "author": "GCCO:LaunchPad",
   "scripts": {
     "dev": "hugo server",
     "build": "hugo --gc --minify --templateMetrics --templateMetricsHints --forceSyncStatic",
     "preview": "hugo server --disableFastRender --navigateToChanged --templateMetrics --templateMetricsHints --watch --forceSyncStatic -e production --minify",
     "lint:md": "markdownlint-cli2",
     "lint:md:fix": "markdownlint-cli2 --fix",
-    "format": "prettier -w ."
+    "format": "prettier -w .",
+    "check:translations": "node .github/translationkey_check.js"
   },
   "devDependencies": {
+    "front-matter": "^4.0.2",
     "markdownlint-cli2": "^0.18.1",
     "prettier": "^3.3.2",
     "prettier-plugin-go-template": "0.0.15"
