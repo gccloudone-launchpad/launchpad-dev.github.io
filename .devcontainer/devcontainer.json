@@ -19,8 +19,10 @@
         "budparr.language-hugo-vscode",
         "tamasfe.even-better-toml",
         "dbaeumer.vscode-eslint",
-        "esbenp.prettier-vscode",
-        "redhat.vscode-yaml"
+        "redhat.vscode-yaml",
+        "prettier.prettier-vscode",
+        "eliostruyf.vscode-front-matter",
+        "DavidAnson.vscode-markdownlint"
       ]
     }
   },

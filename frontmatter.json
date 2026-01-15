@@ -94,6 +94,11 @@
           "default": ""
         }
       ]
+    },
+    "Translation Note": {
+      "description": "",
+      "body": "{{< translation-note >}}",
+      "fields": []
     }
   }
 }
