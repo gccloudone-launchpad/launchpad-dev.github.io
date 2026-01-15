@@ -1,11 +1,11 @@
 ---
 title: Configuration de l'authentification multifacteur (exempté)
-translationKey: tutorials_mfa-exemptions
 description: Configuration de l'authentification multifacteur (exempté)
+translationKey: tutorials/mfa-exemptions
+draft: false
 tags: 
   - AFM
   - Securite
-draft: false
 categories:
   - Tutoriels
 ---

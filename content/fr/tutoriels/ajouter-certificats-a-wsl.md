@@ -1,7 +1,7 @@
 ---
 title: Ajouter Certificats a WSL
 description: ""
-translationKey: tutorials_add-certificates-WSL
+translationKey: tutorials/adding-certificates-to-WSL
 draft: false
 tags:
   - Linux

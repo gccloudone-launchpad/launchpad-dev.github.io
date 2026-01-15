@@ -1,7 +1,7 @@
 ---
 title: AWS - Rôles d'Applications IAM
 description: "Comment créer des rôles IAM personnalisés avec boundary policies dans AWS."
-translationKey: tutorials_aws-application-roles
+translationKey: tutorials/aws-application-roles
 draft: false
 tags:
   - AWS

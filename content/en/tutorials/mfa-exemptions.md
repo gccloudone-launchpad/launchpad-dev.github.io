@@ -1,11 +1,11 @@
 ---
 title: Exempted Multi-Factor Authentication
-translationKey: tutorials_mfa-exemptions
 description: How to setup MFA with exemptions
+translationKey: tutorials/mfa-exemptions
+draft: false
 tags: 
   - MFA
   - Security
-draft: false
 categories:
   - Tutorials
 ---

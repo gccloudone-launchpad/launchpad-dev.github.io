@@ -1,7 +1,7 @@
 ---
 title: AWS - Se connecter
 description: Comment se connecter à AWS
-translationKey: tutorials_aws-get-connected
+translationKey: tutorials/aws-get-connected
 draft: false
 tags:
   - AWS

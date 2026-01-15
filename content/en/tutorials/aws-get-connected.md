@@ -1,7 +1,7 @@
 ---
 title: AWS - Get Connected
 description: How to get connected to AWS
-translationKey: tutorials_aws-get-connected
+translationKey: tutorials/aws-get-connected
 draft: false
 tags:
   - AWS

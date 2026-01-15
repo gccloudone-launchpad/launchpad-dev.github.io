@@ -1,7 +1,7 @@
 ---
 title: AWS - IAM Roles
 description: "Creating custom IAM roles with Boundary Policies in AWS"
-translationKey: tutorials_aws-application-roles
+translationKey: tutorials/aws-application-roles
 draft: false
 tags:
   - AWS
