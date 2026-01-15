@@ -1,6 +1,8 @@
 <!-- For more information, visit: https://design-system.alpha.canada.ca/en/components/link/ -->
+{{- $u := urls.Parse .Destination -}}
 <gcds-link
   href="{{ .Destination | safeURL }}"
+  {{- if $u.IsAbs }} external{{ end -}}
   {{- with .Title }}title="{{ . }}"{{ end -}}>
   {{- with .Text }}{{ . | safeHTML }}{{ end -}}
 </gcds-link>

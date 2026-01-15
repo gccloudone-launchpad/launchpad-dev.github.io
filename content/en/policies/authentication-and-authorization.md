@@ -15,11 +15,18 @@ categories:
 
 To ensure that only properly identified and authenticated users and devices are granted access to Information Technology (IT) resources in compliance with IT security policies, standards, and procedures.
 
-## Reference
+## References
 
-National Institute of Standards and Technology (NIST) Special Publication (SP) 800-53a – Identification and Authentication (IA), NIST SP 800-12, NIST SP 800-63, NIST SP 800-73, NIST SP 800-76, NIST SP 800-78, NIST SP 800-100, NIST SP 800-116;
-
-Homeland Security Presidential Directive (HSPD) 12 Policy for a Common Identification Standard for Federal Employees and Contractors; Federal Information Processing Standards (FIPS): FIPS 201, FIPS 140
+- [NIST SP 800-53a](https://csrc.nist.gov/pubs/sp/800/53/a/r5/final) – Assessing Security and Privacy Controls in Information Systems and Organizations
+- [NIST SP 800-12](https://csrc.nist.gov/pubs/sp/800/12/r1/final) - An Introduction to Information Security
+- [NIST SP 800-100](https://csrc.nist.gov/pubs/sp/800/100/upd1/final) - Information Security Handbook: A Guide for Managers
+- [NIST SP 800-63](https://csrc.nist.gov/pubs/sp/800/63/4/final) - Digital Identity Guidelines
+- [NIST SP 800-73](https://csrc.nist.gov/pubs/sp/800/73/pt1/5/final) - Interfaces for Personal Identity Verification
+- [NIST SP 800-76](https://csrc.nist.gov/pubs/sp/800/76/2/final) - Biometric Specifications for Personal Identity Verification
+- [NIST SP 800-78](https://csrc.nist.gov/pubs/sp/800/78/5/final) - Cryptographic Algorithms and Key Sizes for Personal Identity Verification
+- [NIST SP 800-116](https://csrc.nist.gov/pubs/sp/800/116/r1/final) - Guidelines for the Use of PIV Credentials in Facility Access
+- [HSPD-12](https://www.commerce.gov/osy/programs/credentialing/hspd-12-credentialing) - Policy for a Common Identification Standard for Federal - [FIPS 201](https://csrc.nist.gov/pubs/fips/201-3/final) - Personal Identity Verification (PIV) of Federal Employees and Contractors
+- [FIPS 140](https://csrc.nist.gov/pubs/fips/140-3/final) - Security Requirements for Cryptographic Modules
 
 ## Policy
 
@@ -27,7 +34,7 @@ This policy is applicable to all departments and users of IT resources and asset
 
 ### Identification and Authentication
 
-SSC Science Program Collaboration and Emerging Technologies team shall:
+LaunchPad team shall:
 
 1. Ensure that information systems uniquely identify and authenticate users or processes acting on behalf of users.
 2. Ensure that information systems implement multifactor authentication for network access to privileged accounts.
@@ -43,9 +50,9 @@ No policy requirement is defined for device authentication and authorization as 
 
 ### Identifier Management
 
-SSC Science Program Collaboration and Emerging Technologies team team, through department information systems owners, shall:
+LaunchPad team, through department information systems owners, shall:
 
-1. Ensure that the SSC Science Program Collaboration and Emerging Technologies Ops team manages information system identifiers by receiving authorization from Pathfinder owner to assign an individual, group, role, or device identifier.
+1. Ensure that the LaunchPad Operations team manages information system identifiers by receiving authorization from Pathfinder owner to assign an individual, group, role, or device identifier.
 2. Select an identifier that identifies an individual, group, or role.
 3. Assign the identifier to the intended individual, group, or role.
 4. Prevent reuse of identifiers for 90 days.
@@ -53,7 +60,7 @@ SSC Science Program Collaboration and Emerging Technologies team team, through d
 
 ### Authenticator Management
 
-SSC Science Program Collaboration and Emerging Technologies team shall:
+LaunchPad team shall:
 
 1. Manage information system authenticators by verifying, as part of the initial authenticator distribution, the identity of the individual, group, role, or device receiving the authenticator.
 2. Establish initial authenticator content for authenticators defined by the organization.
@@ -72,19 +79,19 @@ SSC Science Program Collaboration and Emerging Technologies team shall:
 
 ### Authenticator Feedback
 
-SSC Science Program Collaboration and Emerging Technologies team shall:
+LaunchPad team shall:
 
 1. Ensure that information systems obscure feedback of authentication information during the authentication process to protect the information from possible exploitation/use by unauthorized individuals.
 
 ### Cryptographic Module Authentication
 
-SSC Science Program Collaboration and Emerging Technologies team shall:
+LaunchPad team shall:
 
 1. Ensure that information systems implement mechanisms for authentication to a cryptographic module that meet the requirements of applicable state and federal laws, directives, policies, regulations, standards, and guidance for such authentication.
 
 ### Non-Entity User Identification and Authentication
 
-SSC Science Program Collaboration and Emerging Technologies team shall:
+LaunchPad team shall:
 
 1. Ensure that information systems uniquely identify and authenticate non-entity users or processes acting on behalf of non-entity users.
 
@@ -94,15 +101,16 @@ Employees who violate this policy may be subject to appropriate disciplinary act
 
 ## Policy Exceptions
 
-Requests for exceptions to this policy shall be reviewed by the SSC Science Program Collaboration and Emerging Technologies team and the Director. Departments requesting exceptions shall provide such requests to the SSC Science Program Collaboration and Emerging Technologies team in writing. The request should specifically state the scope of the exception along with justification for granting the exception, the potential impact or risk attendant upon granting the exception, risk mitigation measures to be undertaken by the SSC Science Program Collaboration and Emerging Technologies team team, initiatives, actions and a time-frame for achieving the minimum compliance level with the policies set forth herein. The SSC Science Program Collaboration and Emerging Technologies team shall review such requests; confer with the requesting department.
+Requests for exceptions to this policy shall be reviewed by the LaunchPad team and its Director. Departments requesting exceptions shall provide such requests to the LaunchPad team in writing. The request should specifically state the scope of the exception along with justification for granting the exception, the potential impact or risk attendant upon granting the exception, risk mitigation measures to be undertaken by the LaunchPad team, initiatives, actions and a time-frame for achieving the minimum compliance level with the policies set forth herein. The LaunchPad team shall review such requests; confer with the requesting department.
 
 ## Responsible Department
 
-SSC Science Program Collaboration and Emerging Technologies team
+LaunchPad team
 
-## Date Issued/Date Reviewed
+## Change Log
 
-| Task | Date |
-| ----- | ----- |
-| Issued | 10/03/2022 |
-| Reviewed | 28/02/2025 |
+| Date | Author | Description of Change |
+| --- | --- | --- |
+| 2022-03-10 | John Nephin | Initial draft reviewed and approved with team |
+| 2025-01-28 | Tim Jodoin | Periodic Review |
+{ class="full-width" } <!-- markdownlint-disable-line MD056 MD055 -->

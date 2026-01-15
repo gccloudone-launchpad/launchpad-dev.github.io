@@ -1,5 +1,5 @@
 ---
-title: Audit and Accountability Policy and Procedures
+title: Audit and Accountability
 description: ""
 translationKey: policy/audit-and-accoutability
 draft: false
@@ -15,42 +15,45 @@ categories:
 
 To ensure that Information Technology (IT) resources and information systems are established with effective security controls and control enhancements that reflect applicable federal and state laws, Executive Orders, directives, regulations, policies, standards, and guidance.
 
-## Reference
+## References
 
-National Institute of Standards and Technology (NIST) Special Publications (SP): NIST SP 800-53a – Auditing and Accountability (AU), NIST SP 800-12, NIST SP 800-92, NIST SP 800-100
+- [NIST SP 800-53a](https://csrc.nist.gov/pubs/sp/800/53/a/r5/final) – Assessing Security and Privacy Controls in Information Systems and Organizations
+- [NIST SP 800-12](https://csrc.nist.gov/pubs/sp/800/12/r1/final) - An Introduction to Information Security
+- [NIST SP 800-92](https://csrc.nist.gov/pubs/sp/800/92/final) - Guide to Computer Security Log Management
+- [NIST SP 800-100](https://csrc.nist.gov/pubs/sp/800/100/upd1/final) - Information Security Handbook: A Guide for Managers
 
 ## Policy
 
-This policy is applicable to all GCCO: LaunchPad cloud environments.
+This policy is applicable to all LaunchPad cloud environments.
 
 ### Audit Events
 
 The information systems owners, in cooperation with audits and IT, shall:
 
 - Determine that the information system is capable of auditing the following events:
-  - changes to administration roles
-  - all actions taken by a user
-  - login actions with secure accounts (ex: breakglass accounts, root accounts)
-  - network and security changes to core infrastructure
-  - changes and/or access to logs
-  - changes and/or access to auditing systems
-  - sign-in failures
-  - environment policy changes
-- Coordinate the security audit function with other organizational entities requiring audit (ex: Canadian Cyber Center for Security).
-- Provide a rationale for why the auditable events are deemed to be adequate to support after-the-fact investigations of security incidents.
+  - Changes to administration roles
+  - All actions taken by a user
+  - Login actions with secure accounts (ex: breakglass accounts, root accounts)
+  - Network and security changes to core infrastructure
+  - Changes and/or access to logs
+  - Changes and/or access to auditing systems
+  - Sign-in failures
+  - Environment policy changes
+- Coordinate the security audit function with other organizational entities requiring audit (ex: Canadian Cyber Center for Security)
+- Provide a rationale for why the auditable events are deemed to be adequate to support after-the-fact investigations of security incidents
 - Determine that the following events are to be audited within the information system:
-  - changes to administration roles
-  - all actions taken by a user
-  - login actions with secure accounts (ex: breakglass accounts, root accounts)
-  - network and security changes to core infrastructure
-  - changes and/or access to logs
-  - changes and/or access to auditing systems
-  - sign-in failures
-  - environment policy changes
+  - Changes to administration roles
+  - All actions taken by a user
+  - Login actions with secure accounts (ex: breakglass accounts, root accounts)
+  - Network and security changes to core infrastructure
+  - Changes and/or access to logs
+  - Changes and/or access to auditing systems
+  - Sign-in failures
+  - Environment policy changes
 
 ### Reviews and Updates
 
-The GCCO: LaunchPad Operations team shall review and update the audited events yearly.
+The LaunchPad Operations team shall review and update the audited events yearly.
 
 ### Content of Audit Records
 
@@ -66,25 +69,25 @@ The information system shall off-load audit records daily onto a different sys
 
 ### Response to Audit Processing Failures
 
-The GCCO: LaunchPad Operations team shall:
+The LaunchPad Operations team shall:
 
-- Review and document why the audit is failing.
-- Fix any issues with logging and auditing.
+- Review and document why the audit is failing
+- Fix any issues with logging and auditing
 
 ### Audit Storage Capacity Monitoring
 
-The information system shall provide a warning to GCCO: LaunchPad Operations team within 24 hours of when allocated audit record storage volume reaches 75% of repository maximum audit record storage capacity.
+The information system shall provide a warning to the LaunchPad Operations team within 24 hours of when allocated audit record storage volume reaches 75% of repository maximum audit record storage capacity.
 
 ### Real-Time Alerts
 
-The information system shall provide an alert in 2 hours to GCCO: LaunchPad Operations teams when the following audit failure events occur:
+The information system shall provide an alert in 2 hours to the LaunchPad Operations teams when the following audit failure events occur:
 
-- login actions with secure accounts (ex: breakglass accounts, root accounts)
-- network and security changes to core infrastructure
-- changes to security logs
-- changes to auditing system rules
-- environment policy changes
-- breach by a known threat group
+- Login actions with secure accounts (ex: breakglass accounts, root accounts)
+- Network and security changes to core infrastructure
+- Changes to security logs
+- Changes to auditing system rules
+- Environment policy changes
+- Breach by a known threat group
 
 ### Configurable Traffic Volume Thresholds
 
@@ -94,19 +97,19 @@ The information system shall enforce configurable network communications traffic
 
 The information system shall invoke a partial system shutdown in the event of any of the audit failures below, unless an alternate audit capability exists.
 
-- login actions with secure accounts (ex: breakglass accounts, root accounts)
-- network and security changes to core infrastructure
-- changes to security logs
-- changes to auditing system rules
-- environment policy changes
-- breach by a known threat group
+- Login actions with secure accounts (ex: breakglass accounts, root accounts)
+- Network and security changes to core infrastructure
+- Changes to security logs
+- Changes to auditing system rules
+- Environment policy changes
+- Breach by a known threat group
 
 ### Audit Review, Analysis and Reporting
 
 The information system owner shall:
 
 - Review and analyze information system audit records weekly for indications of any inappropriate or unusual activity.
-- Report findings to GCCO: LaunchPad Operations. and Management teams.
+- Report findings to LaunchPad Operations, and Management teams.
 
 ### Process Integration
 
@@ -140,11 +143,11 @@ The information system shall protect audit information and audit tools from unau
 
 ### Access by Subset of Privileged Users
 
-The organization shall authorize access to management of audit functionality to only to GCCO: LaunchPad Operations, and Security teams.
+The organization shall authorize access to management of audit functionality to only to LaunchPad Operations, and Security teams.
 
 ### Audit Record Retention
 
-The information system owners shall retain audit records in accordance to the [Library and Archives Canada (LAC) event logging guidance](https://www.canada.ca/en/government/system/digital-government/online-security-privacy/event-logging-guidance.html) and [Government of Canada Security Control Profile for Cloud-based GC Services retention requirements](https://www.canada.ca/en/government/system/digital-government/modern-emerging-technologies/cloud-services/government-canada-security-control-profile-cloud-based-it-services.html).
+The information system owners shall retain audit records in accordance to Treasury Board Secretariat's (TBS) [Event Logging Guidance](https://www.canada.ca/en/government/system/digital-government/online-security-privacy/event-logging-guidance.html) and [Government of Canada Security Control Profile for Cloud-based GC Services](https://www.canada.ca/en/government/system/digital-government/modern-emerging-technologies/cloud-services/government-canada-security-control-profile-cloud-based-it-services.html) documents.
 
 - CSP: Time period = \[**at least 90 days**\]
 - GC: Time period = \[**events and logs at least 3 months online and at least 6 months in storage; events and logs associated with a security incident for at least 2 years**\]
@@ -158,7 +161,7 @@ The information system owners shall employ query and archive retrieval mechanism
 The information system shall:
 
 - Provide audit record generation capability for the auditable events as defined above.
-- Allow GCCO: LaunchPad Operations, and Security teams to select which auditable events are to be audited by specific components of the information system.
+- Allow LaunchPad Operations team to select which auditable events are to be audited by specific components of the information system.
 
 ### Standardized Formats
 
@@ -166,19 +169,20 @@ The information system shall produce a system-wide (logical or physical) audit t
 
 ### Changes by Authorized Individuals
 
-The information system shall provide the capability for GCCO: LaunchPad Operations, and Security roles to change the auditing to be performed on the cloud environments based on agreed upon values from the team.
+The information system shall provide the capability for the LaunchPad Operations team to change the auditing performed on the cloud environments based on agreed upon values.
 
 ## Procedures
 
 The following should be performed at least every 90 days:
 
 1. Rotate account access keys
-2. Review IaM users and groups removing any people that are not required.
-3. Review IaM roles and permission sets deleting those that are no longer required.
-4. Review EC2 Security groups, key pairs, running instances, and instance sizes.  Adjust, turn off or remove as required.
+2. Review AWS IaM users and groups removing any people that are not required.
+3. Review AWS IaM roles and permission sets deleting those that are no longer required.
+4. Review AWS EC2 Security groups, key pairs, running instances, and instance sizes.
+   - Adjust, turn off, or remove as required.
 5. Review Azure group synchronization.
-6. Review Service Control Policies and adjust as required.
-7. Review Amazon Secure Environment Accelerator repo for updates and remediate as required.
+6. Review AWS Service Control Policies and adjust as required.
+7. Review AWS LZA repository for updates and remediate as required.
 
 The following should be done at least every 7 days:
 
@@ -186,10 +190,12 @@ The following should be done at least every 7 days:
 
 The following should be done daily:
 
-1. Review Microsoft Sentinel for incidents and investigate when required.  See the [Sentinel incident handling](/Azure/Sentinel/azure-sentinel "Sentinel incident handling" ) section.
+1. Review Microsoft Sentinel for incidents and investigate when required. See the {{< needs-review >}}[Sentinel incident handling](/Azure/Sentinel/azure-sentinel "Sentinel incident handling" ) section{{< /needs-review >}}.
 2. Review any alerts coming into the operations mailbox and remediate as required.
 
+{{< needs-review >}}
 See [AWS security audit guidelines](https://docs.aws.amazon.com/general/latest/gr/aws-security-audit-guide.html) and [AWS Operational Best Practices](https://docs.aws.amazon.com/audit-manager/latest/userguide/OBP.html) for additional tips and procedures.
+{{< /needs-review >}}
 
 ## Compliance
 
@@ -197,14 +203,12 @@ Employees who violate this policy may be subject to appropriate disciplinary act
 
 ### Policy Exceptions
 
-Requests for exceptions to this policy shall be reviewed and approved by the GCCO: LaunchPad Management team and Director.
+Requests for exceptions to this policy shall be reviewed and approved by the LaunchPad Management team and its Director.
 
-## Date Issued/Date Reviewed
+## Change Log
 
-| Task | Date |
-| ----------- | ----------- |
-| Issued | 03/01/23 |
-| Reviewed | 01/01/23 |
-| Next Review | 01/01/27 |
-
-<!-- { class="full-width" } markdownlint-disable-line MD056 MD055 -->
+| Date | Author | Description of Change |
+| --- | --- | --- |
+| 2023-03-01 | John Nephin | Initial draft reviewed and approved with team |
+| 2023-03-01 | John Nephin | Added Change Log section |
+{ class="full-width" } <!-- markdownlint-disable-line MD056 MD055 -->

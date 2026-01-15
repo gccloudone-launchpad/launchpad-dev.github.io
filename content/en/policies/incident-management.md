@@ -17,7 +17,7 @@ Incident response includes planning for and actively managing incidents that can
 
 ## Responsibility
 
-- The SSC Science Program Collaboration and Emerging Technologies team is responsible for managing all incident response functions.
+- The LaunchPad team is responsible for managing all incident response functions.
   - While all IT staff are required to follow the written incident response plan, real world deviations are expected and must be handled gracefully. Third-party organizations involved in the incident response process must be managed by the incident manager.
 - Users are responsible for reporting incidents that they are aware of to the appropriate business unit or personnel as specified in the incident reporting process. Users are responsible for attending training for recognizing and reporting incidents within the enterprise.
 
@@ -67,7 +67,7 @@ This policy will be reviewed annually with the process and procedures.
 This policy will be reviewed annually.  
 Each time this document is updated, this table should be updated.  
 
-| Version | Date | Name | Description |
-| ---- | ---- | ---- | ---- |
-| 1.0 | 2023-08-02 | John Nephin | Initial Version |
+| Date | Name | Description |
+| ---- | ---- | ---- |
+| 2023-08-02 | John Nephin | Initial Version |
 { class="full-width" } <!-- markdownlint-disable-line MD056 MD055 -->

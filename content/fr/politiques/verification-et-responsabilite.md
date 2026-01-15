@@ -9,198 +9,204 @@ categories:
   - Politique
 ---
 
-## Purpose
+## Objectif
 
-To ensure that Information Technology (IT) resources and information systems are established with effective security controls and control enhancements that reflect applicable federal and state laws, Executive Orders, directives, regulations, policies, standards, and guidance.
+Assurer que les ressources de technologie de l'information (TI) et les systèmes d'information soient établis avec des contrôles de sécurité efficaces et des améliorations de contrôle qui reflètent les lois fédérales et provinciales applicables, les décrets, directives, règlements, politiques, normes et orientations.
 
-## Reference
+## References
 
-National Institute of Standards and Technology (NIST) Special Publications (SP): NIST SP 800-53a – Auditing and Accountability (AU), NIST SP 800-12, NIST SP 800-92, NIST SP 800-100
+- [NIST SP 800-53a](https://csrc.nist.gov/pubs/sp/800/53/a/r5/final) – Assessing Security and Privacy Controls in Information Systems and Organizations
+- [NIST SP 800-12](https://csrc.nist.gov/pubs/sp/800/12/r1/final) - An Introduction to Information Security
+- [NIST SP 800-92](https://csrc.nist.gov/pubs/sp/800/92/final) - Guide to Computer Security Log Management
+- [NIST SP 800-100](https://csrc.nist.gov/pubs/sp/800/100/upd1/final) - Information Security Handbook: A Guide for Managers
 
-## Policy
+## Politique
 
-This policy is applicable to all GCCO: LaunchPad cloud environments.
+Cette politique s'applique à tous les environnements infonuagiques de GCCO LaunchPad.
 
-### Audit Events
+### Événements de vérification
 
-The information systems owners, in cooperation with audits and IT, shall:
+Les propriétaires des systèmes d'information, en collaboration avec les services de vérification et de TI, doivent :
 
-- Determine that the information system is capable of auditing the following events:
-  - changes to administration roles
-  - all actions taken by a user
-  - login actions with secure accounts (ex: breakglass accounts, root accounts)
-  - network and security changes to core infrastructure
-  - changes and/or access to logs
-  - changes and/or access to auditing systems
-  - sign-in failures
-  - environment policy changes
-- Coordinate the security audit function with other organizational entities requiring audit (ex: Canadian Cyber Center for Security).
-- Provide a rationale for why the auditable events are deemed to be adequate to support after-the-fact investigations of security incidents.
-- Determine that the following events are to be audited within the information system:
-  - changes to administration roles
-  - all actions taken by a user
-  - login actions with secure accounts (ex: breakglass accounts, root accounts)
-  - network and security changes to core infrastructure
-  - changes and/or access to logs
-  - changes and/or access to auditing systems
-  - sign-in failures
-  - environment policy changes
+- Déterminer que le système d'information est capable de vérifier les événements suivants :
+  - Modifications aux rôles d'administration
+  - Toutes les actions effectuées par un utilisateur
+  - Actions de connexion avec des comptes sécurisés (p. ex. : comptes breakglass, comptes root)
+  - Modifications du réseau et de la sécurité de l'infrastructure de base
+  - Modifications et/ou accès aux journaux
+  - Modifications et/ou accès aux systèmes de vérification
+  - Échecs de connexion
+  - Modifications des politiques d'environnement
+- Coordonner la fonction de vérification de la sécurité avec les autres entités organisationnelles nécessitant une vérification (p. ex. : Centre canadien pour la cybersécurité)
+- Fournir une justification expliquant pourquoi les événements vérifiables sont jugés adéquats pour soutenir les enquêtes après coup sur les incidents de sécurité
+- Déterminer que les événements suivants doivent être vérifiés au sein du système d'information :
+  - Modifications aux rôles d'administration
+  - Toutes les actions effectuées par un utilisateur
+  - Actions de connexion avec des comptes sécurisés (p. ex. : comptes breakglass, comptes root)
+  - Modifications du réseau et de la sécurité de l'infrastructure de base
+  - Modifications et/ou accès aux journaux
+  - Modifications et/ou accès aux systèmes de vérification
+  - Échecs de connexion
+  - Modifications des politiques d'environnement
 
-### Reviews and Updates
+### Révisions et mises à jour
 
-The GCCO: LaunchPad Operations team shall review and update the audited events yearly.
+L'équipe des opérations de GCCO LaunchPad doit réviser et mettre à jour les événements vérifiés annuellement.
 
-### Content of Audit Records
+### Contenu des enregistrements de vérification
 
-The information system shall generate audit records containing information that establishes what type of event occurred, when the event occurred, where the event occurred, the source of the event, the outcome of the event, and the identity of any individuals or subjects associated with the event.
+Le système d'information doit générer des enregistrements de vérification contenant des informations qui établissent le type d'événement survenu, le moment où l'événement s'est produit, l'endroit où l'événement s'est produit, la source de l'événement, le résultat de l'événement et l'identité de toute personne ou tout sujet associé à l'événement.
 
-### Audit Storage Capacity Planning
+### Planification de la capacité de stockage des vérifications
 
-The information owner shall ensure audit record storage capacity is allocated when required and that it will meet the retention period.
+Le propriétaire de l'information doit s'assurer que la capacité de stockage des enregistrements de vérification est allouée au besoin et qu'elle respectera la période de conservation.
 
-### Transfer to Alternate Storage
+### Transfert vers un stockage de substitution
 
-The information system shall off-load audit records daily onto a different system or media than the system being audited.
+Le système d'information doit décharger quotidiennement les enregistrements de vérification sur un système ou un support différent du système vérifié.
 
-### Response to Audit Processing Failures
+### Réponse aux défaillances du traitement de vérification
 
-The GCCO: LaunchPad Operations team shall:
+L'équipe des opérations de GCCO LaunchPad doit :
 
-- Review and document why the audit is failing.
-- Fix any issues with logging and auditing.
+- Réviser et documenter les raisons de l'échec de la vérification
+- Corriger tout problème lié à la journalisation et à la vérification
 
-### Audit Storage Capacity Monitoring
+### Surveillance de la capacité de stockage des vérifications
 
-The information system shall provide a warning to GCCO: LaunchPad Operations team within 24 hours of when allocated audit record storage volume reaches 75% of repository maximum audit record storage capacity.
+Le système d'information doit fournir un avertissement à l'équipe des opérations de GCCO LaunchPad dans les 24 heures suivant le moment où le volume de stockage des enregistrements de vérification alloué atteint 75 % de la capacité maximale de stockage des enregistrements de vérification du référentiel.
 
-### Real-Time Alerts
+### Alertes en temps réel
 
-The information system shall provide an alert in 2 hours to GCCO: LaunchPad Operations teams when the following audit failure events occur:
+Le système d'information doit fournir une alerte dans un délai de 2 heures aux équipes des opérations de GCCO LaunchPad lorsque les échecs de vérification suivants se produisent :
 
-- login actions with secure accounts (ex: breakglass accounts, root accounts)
-- network and security changes to core infrastructure
-- changes to security logs
-- changes to auditing system rules
-- environment policy changes
-- breach by a known threat group
+- Actions de connexion avec des comptes sécurisés (p. ex. : comptes breakglass, comptes root)
+- Modifications du réseau et de la sécurité de l'infrastructure de base
+- Modifications aux journaux de sécurité
+- Modifications aux règles du système de vérification
+- Modifications des politiques d'environnement
+- Intrusion par un groupe de menace connu
 
-### Configurable Traffic Volume Thresholds
+### Seuils de volume de trafic configurables
 
-The information system shall enforce configurable network communications traffic volume thresholds reflecting limits on auditing capacity and rejects or delays network traffic above those thresholds.
+Le système d'information doit appliquer des seuils de volume de trafic de communications réseau configurables qui reflètent les limites de la capacité de vérification et rejeter ou retarder le trafic réseau au-delà de ces seuils.
 
-### Shutdown on Failure
+### Arrêt en cas de défaillance
 
-The information system shall invoke a partial system shutdown in the event of any of the audit failures below, unless an alternate audit capability exists.
+Le système d'information doit invoquer un arrêt partiel du système en cas de défaillances de vérification ci-dessous, à moins qu'une capacité de vérification de substitution n'existe.
 
-- login actions with secure accounts (ex: breakglass accounts, root accounts)
-- network and security changes to core infrastructure
-- changes to security logs
-- changes to auditing system rules
-- environment policy changes
-- breach by a known threat group
+- Actions de connexion avec des comptes sécurisés (p. ex. : comptes breakglass, comptes root)
+- Modifications du réseau et de la sécurité de l'infrastructure de base
+- Modifications aux journaux de sécurité
+- Modifications aux règles du système de vérification
+- Modifications des politiques d'environnement
+- Intrusion par un groupe de menace connu
 
-### Audit Review, Analysis and Reporting
+### Révision, analyse et rapport de vérification
 
-The information system owner shall:
+Le propriétaire du système d'information doit :
 
-- Review and analyze information system audit records weekly for indications of any inappropriate or unusual activity.
-- Report findings to GCCO: LaunchPad Operations. and Management teams.
+- Réviser et analyser hebdomadairement les enregistrements de vérification du système d'information pour détecter toute activité inappropriée ou inhabituelle.
+- Communiquer les résultats aux opérations de GCCO LaunchPad et aux équipes de gestion.
 
-### Process Integration
+### Intégration des processus
 
-The information system owners shall ensure automated mechanisms are employed to integrate audit review, analysis, and reporting processes to support organizational processes for investigation and response to suspicious activities.
+Les propriétaires des systèmes d'information doivent s'assurer que des mécanismes automatisés sont employés pour intégrer les processus de révision, d'analyse et de rapport de vérification afin de soutenir les processus organisationnels d'enquête et de réponse aux activités suspectes.
 
-### Audit Repositories
+### Référentiels de vérification
 
-The information system owner shall ensure analysis and correlation of audit records across different repositories to gain situational awareness.
+Le propriétaire du système d'information doit s'assurer de l'analyse et de la corrélation des enregistrements de vérification dans différents référentiels afin d'acquérir une conscience situationnelle.
 
-### Audit Reduction and Report Generation
+### Réduction de la vérification et génération de rapports
 
-The information system shall provide an audit reduction and report generation capability that:
+Le système d'information doit fournir une capacité de réduction de la vérification et de génération de rapports qui :
 
-- Supports on-demand audit review, analysis, and reporting requirements and after-the-fact.
-- Does not alter the original content or time ordering of audit records.
+- Prend en charge les exigences de révision, d'analyse et de rapport de vérification sur demande et après coup.
+- Ne modifie pas le contenu original ou l'ordre chronologique des enregistrements de vérification.
 
-### Time Stamps
+### Horodatage
 
-The information system shall:
+Le système d'information doit :
 
-- Use internal system clocks to generate time stamps for audit records.
-- Record time stamps for audit records that can be mapped to Coordinated Universal Time (UTC) or Greenwich Mean Time (GMT) and meets one second granularity of time measurement or lower.
+- Utiliser des horloges système internes pour générer des horodatages pour les enregistrements de vérification.
+- Enregistrer des horodatages pour les enregistrements de vérification qui peuvent être mappés au temps universel coordonné (UTC) ou au temps moyen de Greenwich (GMT) et respecter une granularité de mesure du temps d'une seconde ou moins.
 
-### Synchronization With Authoritative Time Source
+### Synchronisation avec une source temporelle faisant autorité
 
-Timestamps will rely on the cloud provider time sync services which uses a fleet of redundant satellite-connected and atomic clocks in each Region to deliver a highly accurate reference clock.  Using the cloud providers service will ensure that all timestamps match even for services where it cannot be set.
+Les horodatages s'appuieront sur les services de synchronisation temporelle du fournisseur infonuagique qui utilise une flotte d'horloges atomiques et connectées par satellite redondantes dans chaque région pour fournir une horloge de référence hautement précise. L'utilisation du service du fournisseur infonuagique garantira que tous les horodatages concordent, même pour les services où ils ne peuvent pas être définis.
 
-### Protection of Audit Information
+### Protection des informations de vérification
 
-The information system shall protect audit information and audit tools from unauthorized access, modification, and deletion.
+Le système d'information doit protéger les informations de vérification et les outils de vérification contre l'accès, la modification et la suppression non autorisés.
 
-### Access by Subset of Privileged Users
+### Accès par un sous-ensemble d'utilisateurs privilégiés
 
-The organization shall authorize access to management of audit functionality to only to GCCO: LaunchPad Operations, and Security teams.
+L'organisation doit autoriser l'accès à la gestion de la fonctionnalité de vérification uniquement aux équipes des opérations et de la sécurité de GCCO LaunchPad.
 
-### Audit Record Retention
+### Conservation des enregistrements de vérification
 
-The information system owners shall retain audit records in accordance to the [Library and Archives Canada (LAC) event logging guidance](https://www.canada.ca/en/government/system/digital-government/online-security-privacy/event-logging-guidance.html) and [Government of Canada Security Control Profile for Cloud-based GC Services retention requirements](https://www.canada.ca/en/government/system/digital-government/modern-emerging-technologies/cloud-services/government-canada-security-control-profile-cloud-based-it-services.html).
+Les propriétaires des systèmes d'information doivent conserver les enregistrements de vérification conformément aux documents [Guide sur la consignation d’événements](https://www.canada.ca/fr/gouvernement/systeme/gouvernement-numerique/securite-confidentialite-ligne/orientations-politiques-matiere-cybersecurite/guide-sur-la-consignation-evenements.html) et [Profil des mesures de sécurité pour les services du GC fondés sur l’informatique en nuage](https://www.canada.ca/fr/gouvernement/systeme/gouvernement-numerique/innovations-gouvernementales-numeriques/services-informatique-nuage/profil-controle-securite-services-ti-fondes-information-nuage.html) du Secrétariat du Conseil du Trésor (SCT).
 
-- CSP: Time period = \[**at least 90 days**\]
-- GC: Time period = \[**events and logs at least 3 months online and at least 6 months in storage; events and logs associated with a security incident for at least 2 years**\]
+- FSI : Période = \[**au moins 90 jours**\]
+- GC : Période = \[**événements et journaux au moins 3 mois en ligne et au moins 6 mois en stockage; événements et journaux associés à un incident de sécurité pendant au moins 2 ans**\]
 
-### Long-Term Retrieval Capability
+### Capacité de récupération à long terme
 
-The information system owners shall employ query and archive retrieval mechanisms to ensure that long-term audit records generated by the information system can be retrieved.
+Les propriétaires des systèmes d'information doivent utiliser des mécanismes de requête et de récupération d'archives pour garantir que les enregistrements de vérification à long terme générés par le système d'information peuvent être récupérés.
 
-### Audit Generation
+### Génération de vérification
 
-The information system shall:
+Le système d'information doit :
 
-- Provide audit record generation capability for the auditable events as defined above.
-- Allow GCCO: LaunchPad Operations, and Security teams to select which auditable events are to be audited by specific components of the information system.
+- Fournir une capacité de génération d'enregistrements de vérification pour les événements vérifiables tels que définis ci-dessus.
+- Permettre à l'équipe des opérations de GCCO LaunchPad de sélectionner les événements vérifiables qui doivent être vérifiés par des composants spécifiques du système d'information.
 
-### Standardized Formats
+### Formats normalisés
 
-The information system shall produce a system-wide (logical or physical) audit trail composed of audit records in a standardized format.
+Le système d'information doit produire une piste de vérification à l'échelle du système (logique ou physique) composée d'enregistrements de vérification dans un format normalisé.
 
-### Changes by Authorized Individuals
+### Modifications par des personnes autorisées
 
-The information system shall provide the capability for GCCO: LaunchPad Operations, and Security roles to change the auditing to be performed on the cloud environments based on agreed upon values from the team.
+Le système d'information doit fournir à l'équipe des opérations de GCCO LaunchPad la capacité de modifier la vérification effectuée sur les environnements infonuagiques en fonction de valeurs convenues.
 
-## Procedures
+## Procédures
 
-The following should be performed at least every 90 days:
+Les actions suivantes doivent être effectuées au moins tous les 90 jours :
 
-1. Rotate account access keys
-2. Review IaM users and groups removing any people that are not required.
-3. Review IaM roles and permission sets deleting those that are no longer required.
-4. Review EC2 Security groups, key pairs, running instances, and instance sizes.  Adjust, turn off or remove as required.
-5. Review Azure group synchronization.
-6. Review Service Control Policies and adjust as required.
-7. Review Amazon Secure Environment Accelerator repo for updates and remediate as required.
+1. Effectuer la rotation des clés d'accès des comptes
+2. Réviser les utilisateurs et groupes AWS IAM en retirant toute personne qui n'est pas requise.
+3. Réviser les rôles AWS IAM et les ensembles d'autorisations en supprimant ceux qui ne sont plus requis.
+4. Réviser les groupes de sécurité AWS EC2, les paires de clés, les instances en cours d'exécution et les tailles d'instances.
+   - Ajuster, désactiver ou supprimer au besoin.
+5. Réviser la synchronisation des groupes Azure.
+6. Réviser les Service Control Policies AWS et ajuster au besoin.
+7. Réviser le référentiel AWS LZA pour les mises à jour et remédier au besoin.
 
-The following should be done at least every 7 days:
+Les actions suivantes doivent être effectuées au moins tous les 7 jours :
 
-1. Review SecurityHub, AWS Config, GuardDuty, CloudTrail and Defender for Cloud findings and remediate as required.
+1. Réviser les résultats de SecurityHub, AWS Config, GuardDuty, CloudTrail et Defender for Cloud, et remédier au besoin.
 
-The following should be done daily:
+Les actions suivantes doivent être effectuées quotidiennement :
 
-1. Review Microsoft Sentinel for incidents and investigate when required.  See the [Sentinel incident handling](/Azure/Sentinel/azure-sentinel "Sentinel incident handling" ) section.
-2. Review any alerts coming into the operations mailbox and remediate as required.
+1. Réviser Microsoft Sentinel pour les incidents et enquêter au besoin. Voir la section {{< needs-review >}}[Gestion des incidents Sentinel](/Azure/Sentinel/azure-sentinel "Gestion des incidents Sentinel" ){{< /needs-review >}}.
+2. Réviser toutes les alertes reçues dans la boîte aux lettres des opérations et remédier au besoin.
 
-See [AWS security audit guidelines](https://docs.aws.amazon.com/general/latest/gr/aws-security-audit-guide.html) and [AWS Operational Best Practices](https://docs.aws.amazon.com/audit-manager/latest/userguide/OBP.html) for additional tips and procedures.
+{{< needs-review >}}
+Consulter les [Lignes directrices sur la vérification de sécurité AWS](https://docs.aws.amazon.com/general/latest/gr/aws-security-audit-guide.html) et les [Pratiques opérationnelles exemplaires AWS](https://docs.aws.amazon.com/audit-manager/latest/userguide/OBP.html) pour des conseils et procédures supplémentaires.
+{{< /needs-review >}}
 
-## Compliance
+## Conformité
 
-Employees who violate this policy may be subject to appropriate disciplinary action up to and including discharge as well as both civil and criminal penalties. Non-employees, including, without limitation, contractors, may be subject to termination of contractual agreements, denial of access to IT resources, and other actions as well as both civil and criminal penalties.
+Les employés qui enfreignent cette politique peuvent faire l'objet de mesures disciplinaires appropriées pouvant aller jusqu'au congédiement, ainsi que de sanctions civiles et pénales. Les non-employés, y compris, sans s'y limiter, les entrepreneurs, peuvent faire l'objet de la résiliation d'ententes contractuelles, du refus d'accès aux ressources de TI et d'autres mesures, ainsi que de sanctions civiles et pénales.
 
-### Policy Exceptions
+### Exceptions à la politique
 
-Requests for exceptions to this policy shall be reviewed and approved by the GCCO: LaunchPad Management team and Director.
+Les demandes d'exception à cette politique doivent être révisées et approuvées par l'équipe de gestion et le directeur de GCCO LaunchPad.
 
-## Date Issued/Date Reviewed
+## Journal des modifications
 
-| Task | Date |
-| ----------- | ----------- |
-| Issued | 03/01/23 |
-| Reviewed | 01/01/23 |
-| Next Review | 01/01/27 |
+| Date | Auteur | Description de la modification |
+| --- | --- | --- |
+| 2023-03-01 | John Nephin | Ébauche initiale révisée et approuvée avec l'équipe |
+| 2023-03-01 | John Nephin | Ajout de la section Journal des modifications |
+{ class="full-width" } <!-- markdownlint-disable-line MD056 MD055 -->
