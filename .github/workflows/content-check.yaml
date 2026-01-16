@@ -69,20 +69,32 @@ jobs:
           name: code
           path: .
   
-  checks:
+  translations:
     
-    name: Checks
+    name: Translations
     runs-on: ubuntu-latest
     needs: setup-env
     steps:
       - uses: actions/download-artifact@v7
         with:
           name: code
+          path: site
           
       - name: Translations
         run: |
-          npm run check:translations
+          cd site && npm run check:translations
+
+  needs-review:
+    
+    name: Needs Review
+    runs-on: ubuntu-latest
+    needs: setup-env
+    steps:
+      - uses: actions/download-artifact@v7
+        with:
+          name: code
+          path: site
 
       - name: Needs Review
         run: |
-          npm run check:needsreview
+          cd site && npm run check:needsreview
