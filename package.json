@@ -11,8 +11,8 @@
     "lint:md": "markdownlint-cli2",
     "lint:md:fix": "markdownlint-cli2 --fix",
     "format": "prettier -w .",
-    "check:translations": "node .github/translationkey_check.js",
-    "check:needsreview": "node .github/needsreview_check.js"
+    "check:translations": "node scripts/translationkey_check.js",
+    "check:needsreview": "node scripts/needsreview_check.js"
   },
   "devDependencies": {
     "front-matter": "^4.0.2",

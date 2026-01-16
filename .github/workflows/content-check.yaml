@@ -78,47 +78,20 @@ jobs:
         name: Download Artifact
         with:
           name: code
-          path: site
           
-      - name: Translations
+      - name: Run Check
         run: |
-          pwd && tree -L 3
+          npm run check:translations
 
+  needs-review:
+    name: Needs Review
+    runs-on: ubuntu-latest
+    needs: setup-env
+    steps:
+      - uses: actions/download-artifact@v7
+        with:
+          name: code
 
-  # translations:
-  #   name: Translations
-  #   runs-on: ubuntu-latest
-  #   needs: setup-env
-  #   steps:
-  #     - uses: actions/download-artifact@v7
-  #       with:
-  #         name: code
-  #         path: site
-
-  # translations:
-  #   name: Translations
-  #   runs-on: ubuntu-latest
-  #   needs: setup-env
-  #   steps:
-  #     - uses: actions/download-artifact@v7
-  #       with:
-  #         name: code
-  #         path: site
-          
-  #     - name: Translations
-  #       run: |
-  #         cd site && npm run check:translations
-
-  # needs-review:
-  #   name: Needs Review
-  #   runs-on: ubuntu-latest
-  #   needs: setup-env
-  #   steps:
-  #     - uses: actions/download-artifact@v7
-  #       with:
-  #         name: code
-  #         path: site
-
-  #     - name: Needs Review
-  #       run: |
-  #         cd site && npm run check:needsreview
+      - name: Run Check
+        run: |
+          npm run check:needsreview
