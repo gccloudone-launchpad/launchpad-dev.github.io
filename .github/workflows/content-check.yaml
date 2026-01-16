@@ -78,11 +78,10 @@ jobs:
         name: Download Artifact
         with:
           name: code
-          path: site
           
       - name: Translations
         run: |
-          pwd && tree -L 3
+          pwd && tree -aL 3
 
 
   # translations:
