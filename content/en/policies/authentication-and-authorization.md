@@ -113,4 +113,4 @@ LaunchPad team
 | --- | --- | --- |
 | 2022-03-10 | John Nephin | Initial draft reviewed and approved with team |
 | 2025-01-28 | Tim Jodoin | Periodic Review |
-{ class="full-width" } <!-- markdownlint-disable-line MD056 MD055 -->
+{ .full-width } <!-- markdownlint-disable-line MD056 MD055 -->

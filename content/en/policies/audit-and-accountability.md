@@ -211,4 +211,4 @@ Requests for exceptions to this policy shall be reviewed and approved by the Lau
 | --- | --- | --- |
 | 2023-03-01 | John Nephin | Initial draft reviewed and approved with team |
 | 2023-03-01 | John Nephin | Added Change Log section |
-{ class="full-width" } <!-- markdownlint-disable-line MD056 MD055 -->
+{ .full-width } <!-- markdownlint-disable-line MD056 MD055 -->

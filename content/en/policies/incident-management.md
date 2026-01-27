@@ -62,12 +62,9 @@ Incident response includes planning for and actively managing incidents that can
 
 This policy will be reviewed annually with the process and procedures.
 
-#### Revision History
+## Change Log
 
-This policy will be reviewed annually.  
-Each time this document is updated, this table should be updated.  
-
-| Date | Name | Description |
+| Date | Author | Description of Change |
 | ---- | ---- | ---- |
 | 2023-08-02 | John Nephin | Initial Version |
-{ class="full-width" } <!-- markdownlint-disable-line MD056 MD055 -->
+{ .full-width } <!-- markdownlint-disable-line MD056 MD055 -->
