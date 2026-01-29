@@ -67,7 +67,7 @@ Si vous décidez de traiter à l'extérieur du Canada, vous pouvez utiliser les 
 
 ### Passage en production
 
-Selon notre expérience, presque tous les espaces de production infonuagiques sont configurés pour prendre en charge Protégé B, ce qui signifie que même si votre projet n'utilise pas PB, vous devriez tout de même vous attendre aux restrictions de PB (voir [Expérimentations Protégé B](#protected-b-experiments) ci-dessus).
+Selon notre expérience, presque tous les espaces de production infonuagiques sont configurés pour prendre en charge Protégé B, ce qui signifie que même si votre projet n'utilise pas PB, vous devriez tout de même vous attendre aux restrictions de PB (voir [Expérimentations Protégé B](#expérimentations-protégé-b) ci-dessus).
 Notez qu'en production, vous pouvez également avoir l'option de déploiements *Provisioned*, qui sont essentiellement des engagements de tokens/heure, mais quelques modèles supplémentaires sont offerts.
 
 ### Types de déploiement
@@ -76,9 +76,8 @@ Dans Azure OpenAI, il existe principalement deux « dimensions » pour déployer
 
 #### Géographique
 
-* Les modèles **Standard** ou **Regional** sont traités dans la région de la ressource (OpenAI ou AI Foundry) à laquelle ils sont attachés.
-
-- **Global**, comme son nom l'indique, ignore plus ou moins la région de votre ressource et traitera votre demande dans le centre de données Azure qui peut le mieux vous servir. Étrangement, vous ne pouvez *pas* déployer *tous* les modèles en tant que Global dans toutes les régions; consultez la section [Expérimentations non classifiées](#unclassified-experiments) ci-dessus pour notre recommandation.
+- Les modèles **Standard** ou **Regional** sont traités dans la région de la ressource (OpenAI ou AI Foundry) à laquelle ils sont attachés.
+- **Global**, comme son nom l'indique, ignore plus ou moins la région de votre ressource et traitera votre demande dans le centre de données Azure qui peut le mieux vous servir. Étrangement, vous ne pouvez *pas* déployer *tous* les modèles en tant que Global dans toutes les régions; consultez la section [Expérimentations non classifiées](#expérimentations-non-classifiées) ci-dessus pour notre recommandation.
 - **Data Zone** est un type spécial qui ne s'applique pas vraiment à nous; c'est comme Global mais limite le traitement à la même frontière géopolitique que celle où la ressource est déployée : soit les États-Unis ou l'UE.
 
 #### Type
