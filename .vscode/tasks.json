@@ -19,21 +19,24 @@
       "script": "check:translations",
       "problemMatcher": [],
       "label": "Checks - Pages have translations",
-      "detail": "Make sure all pages exist in both languages"
+      "detail": "Make sure all pages exist in both languages",
+      "hide": true
     },
     {
       "type": "npm",
       "script": "check:needsreview",
       "problemMatcher": [],
       "label": "Checks - Pages that Need Review",
-      "detail": "Look for needs-review shortcodes that might need to be dealth with before commiting"
+      "detail": "Look for needs-review shortcodes that might need to be dealth with before commiting",
+      "hide": true
     },
     {
       "type": "npm",
       "script": "check:bilingual",
       "problemMatcher": [],
       "label": "Check - Bilingual updates",
-      "detail": "Checks all currently updated files to make sure both languages were updated"
+      "detail": "Checks all currently updated files to make sure both languages were updated",
+      "hide": true
     }
   ]
 }
