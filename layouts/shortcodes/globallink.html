@@ -1,0 +1,6 @@
+{{/* Look up a page by translationKey, return its .RelPermalink */}}
+{{ $key := .Get 0 }}
+{{ $matches := where site.RegularPages "Params.translationKey" $key }}
+{{ with $matches }}
+  {{ (index . 0).RelPermalink }}
+{{ end }}

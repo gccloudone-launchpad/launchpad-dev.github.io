@@ -209,4 +209,4 @@ Les demandes d'exception à cette politique doivent être révisées et approuv�
 | --- | --- | --- |
 | 2023-03-01 | John Nephin | Ébauche initiale révisée et approuvée avec l'équipe |
 | 2023-03-01 | John Nephin | Ajout de la section Journal des modifications |
-{ class="full-width" } <!-- markdownlint-disable-line MD056 MD055 -->
+{ .full-width } <!-- markdownlint-disable-line MD056 MD055 -->

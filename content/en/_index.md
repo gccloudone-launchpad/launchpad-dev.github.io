@@ -1,6 +1,6 @@
 ---
 title: LaunchPad
-description: Modern service delivery for all Canadians.
+description: Fast, secure, and flexible cloud experimentation for government innovation
 translationKey: homePage
 draft: false
 ---
@@ -17,14 +17,32 @@ GCCO LaunchPad prioritizes innovation and experimentation with:
 
 ## A powerful set of platforms and tools designed for your experimentation needs
 
-- Immerse yourself in a 3-9 month experimental journey with leading cloud platforms like Azure, AWS, or GCP.
-- Evaluate and unlock cutting-edge cloud solutions tailored to solve your scientific challenges.
+- Immerse yourself in a 3-9 month experimental journey using the leading cloud platforms.
+  - Microsoft Azure
+  - Amazon Web Services (AWS)
+  - Google Cloud Platform (GCP).
+- Evaluate and unlock cutting-edge solutions tailored to solve your specific challenges.
 - Benefit from access to our subject matter experts who provide tailored guidance and support, ensuring that your experiments and proofs of concept are optimized for success.
-- Collaborate anywhere, with anyone, anytime on a GC platform that allows federal scientists, researchers, and external stakeholders to work together across departmental boundaries.
+- Collaborate anywhere, anytime, with anyone on a GC platform that allows everyone to work together across organization boundaries.
 
-## Tutorials
+## How to Get Started
 
-Tutorials
+GC organizations can use LaunchPad for a single experiment with cloud consumption totalling up to $5,000. All experiments must comply with our [Terms and Conditions]({{< globallink "terms-and-conditions" >}}). If you are interested in using LaunchPad, you must apply and meet selection criteria to determine if your experiment is a good fit for this managed environment.
+
+If your experiment is selected, SSC may cover the cost. Future LaunchPad offerings may have associated fees.
+
+### Application Process
+
+1. Complete an [intake request](https://ltpms-sgpel.science.cloud-nuage.canada.ca/app/scie-p-intake#/welcome/english)
+2. Provide all possible details including:
+   - Scope of work
+   - Estimated cost and timeframe (if known)
+   - Preferred cloud service provider for the experiment (if known)
+   - Area of innovation to explore (e.g. infrastructure, platform, etc.)
+
+Once your request is recieved, we review it, and aim to be in touch within 10 business days.
+
+We will not automatically approve all experiments, but will assess each application for suitability.
 
 ## What our clients are saying about LaunchPad
 

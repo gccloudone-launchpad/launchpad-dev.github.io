@@ -27,7 +27,7 @@ This can be a little complicated, and requires a bit of spelunking into the verb
 
 This is the verbose output of trying to access `https://logdy.dev/install.sh` with `curl`:
 
-```text
+```text {hl_lines="29"}
 $ curl -vv https://logdy.dev/install.sh | sh
   % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
                                  Dload  Upload   Total   Spent    Left  Speed

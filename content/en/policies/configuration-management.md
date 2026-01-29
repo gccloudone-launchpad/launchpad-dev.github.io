@@ -139,4 +139,4 @@ LaunchPad
 | --- | --- | --- |
 | 2022-04-06 | John Nephin | Initial draft reviewed and approved with team |
 | 2023-07-24 | John Nephin | Added Change Log section |
-{ class="full-width" } <!-- markdownlint-disable-line MD056 MD055 -->
+{ .full-width } <!-- markdownlint-disable-line MD056 MD055 -->

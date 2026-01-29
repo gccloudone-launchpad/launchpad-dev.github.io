@@ -12,10 +12,10 @@
     </div>
   </section>
   <section class="container-xl mx-auto xl:px-0 sm:px-500 px-300">
-    <div class="homepage-content">
-      {{ $content := .Content | replaceRE "<p>(.*?)</p>" "<gcds-text character-limit=\"false\">$1</gcds-text>" }}
+    <gcds-container size="xl" main-container centered tag="main">
+      {{ $content := .Content | replaceRE `(?s:<p>(.*?)</p>)`  (printf "<gcds-text character-limit=\"%v\">$1</gcds-text>" (not (.Page.Params.disableCharacterLimit | default .Site.Params.disableCharacterLimit))) }}
       {{ $content | safeHTML }}
-    </div>
+    </gcds-container>
     <div>
       {{ range first 10 .Site.RegularPages }}
         {{ .Render "summary" }}

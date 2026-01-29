@@ -31,4 +31,4 @@ Anyone planning on using or creating an open source project should become famili
 | Date | Author | Description of Change |
 | --- | --- | --- |
 | 2022-10-04 | John Nephin | Initial draft reviewed and approved with team |
-{ class="full-width" } <!-- markdownlint-disable-line MD056 MD055 -->
+{ .full-width } <!-- markdownlint-disable-line MD056 MD055 -->
