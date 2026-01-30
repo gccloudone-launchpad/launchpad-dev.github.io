@@ -20,6 +20,32 @@ With those foundational dependencies installed, run `npm install` to install the
 
 You should then be able run `hugo serve` and have the site available at [http://localhost:1313](http://localhost:1313).
 
+### Installation
+
+#### Windows
+
+Installing using WinGet is probably best method, as it adds it to your PATH, and takes care of dependencies.
+
+The following command-line should take care of all the things:
+
+```shell
+winget install Hugo.Hugo.Extended GoLang.Go
+```
+
+#### Linux
+
+If you're running on Ubuntu, you can install Go with `sudo apt install golang`. Use DNF on RHEL clones.
+
+For Hugo, download it from their Git repo's [Releases](https://github.com/gohugoio/hugo/releases) page.
+
+For Node.js, we recommend using Node Version Manager (nvm) if you work on a number of projects, and might have Node version issues. To install NVM, run this command:
+
+```text
+curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.40.4/install.sh | bash
+```
+
+To use version 24, run `nvm use 24`.
+
 ### VSCode
 
 VSCode is the primary IDE used to work on this site, and it is stronly recommeded to install all extensions specified, as it will make your life easier/better.
