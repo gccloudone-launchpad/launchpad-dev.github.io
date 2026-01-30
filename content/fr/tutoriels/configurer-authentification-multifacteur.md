@@ -5,7 +5,7 @@ translationKey: tutorials/setup-multifactor-authentication
 draft: false
 tags: 
   - AFM
-  - Sécurity
+  - Sécurité
 categories: 
   - Tutoriels
 ---
