@@ -1,6 +1,6 @@
 ---
 title: AWS - Boundary Policies
-description: "AWS, IAM Roles, Boundary Policies"
+description: AWS, IAM Roles, Boundary Policies
 translationKey: tutorials/aws-boundary-policies
 draft: true
 tags:
@@ -9,4 +9,5 @@ tags:
   - Boundary Policies
 categories:
   - Tutorials
+  - AWS
 ---

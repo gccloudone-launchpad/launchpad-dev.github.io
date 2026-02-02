@@ -1,13 +1,12 @@
 ---
 title: AWS - Limites D'Autorisations
-description: "AWS, IAM Roles, Boundary Policies"
+description: AWS, IAM Roles, Boundary Policies
 translationKey: tutorials/aws-boundary-policies
 draft: true
 tags:
   - AWS
   - IAM
-  - Boundary Policies
 categories:
-  - Tutorials
+  - AWS
+  - Tutoriels
 ---
-

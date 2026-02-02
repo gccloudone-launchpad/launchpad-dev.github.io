@@ -9,6 +9,7 @@ tags:
   - Automatisation
 categories:
   - Tutoriels
+  - Azure
 ---
 
 ## Description

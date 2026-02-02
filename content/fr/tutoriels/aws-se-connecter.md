@@ -9,6 +9,7 @@ tags:
   - CLI
 categories:
   - Tutoriels
+  - AWS
 ---
 
 ## Navigateur Web
