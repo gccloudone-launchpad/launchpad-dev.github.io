@@ -51,6 +51,7 @@ La plateforme d'Innovation et d'Expérimentation Infonuagique (IEI) fournit un e
 - **Gestion des coûts et de la consommation** : Les utilisateurs sont responsables de la gestion de leurs limites de consommation budgétaire convenues et de la surveillance proactive de l'utilisation des ressources. Tout dépassement au-delà du budget alloué est soumis à paiement ou récupération des coûts. SPC se réserve le droit de mettre en œuvre des mesures de contrôle des coûts si nécessaire. Si un utilisateur prévoit un besoin de calcul accru ou une augmentation drastique de la consommation de ressources cloud, il doit en informer son responsable de l'expérimentation chez SPC au moins deux jours ouvrables avant l'exécution du test.
 - **Occupation limitée dans le temps** : L'utilisation est limitée à des projets spécifiques à court terme, avec une plage d'occupation de **3 à 12 mois**.
 - **Échelle de consommation** : Par défaut, la consommation est à petite échelle, avec une consommation à grande échelle disponible sur demande et approbation.
+- **Gestion sécurisée des secrets** : Les informations d'identification sensibles—telles que les clés API, jetons ou mots de passe—ne sont jamais codées en dur ou versées dans un dépôt (public ou privé); utilisez plutôt des variables d'environnement approuvées ou des outils de gestion des secrets, et effectuez immédiatement une rotation de toute information d'identification exposée accidentellement.
 
 ## Connectivité et gestion des données
 
