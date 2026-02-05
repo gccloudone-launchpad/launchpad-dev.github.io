@@ -9,6 +9,7 @@ tags:
   - Automation
 categories:
   - Tutorials
+  - Azure
 ---
 
 ## Description

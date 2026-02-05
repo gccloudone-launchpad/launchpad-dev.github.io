@@ -4,11 +4,11 @@ description: Information about running Azure OpenAI
 translationKey: tutorials/azure-openai
 draft: false
 tags:
-  - AWS
-  - IAM
-  - CLI
+  - IA
+  - Azure
 categories:
-  - Tutorials
+  - Tutoriels
+  - Azure
 ---
 
 > Nous avons un petit dicton : « Bienvenue dans l'infonuagique! Une nouvelle expérience chaque jour! ». Malheureusement, cela est particulièrement pertinent pour l'IA/ML, qui semble évoluer encore plus rapidement. Veuillez nous pardonner (et nous en informer) pour tout ce qui pourrait être désuet ici!

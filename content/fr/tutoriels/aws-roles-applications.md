@@ -1,6 +1,6 @@
 ---
 title: AWS - Rôles d'Applications IAM
-description: "Comment créer des rôles IAM personnalisés avec boundary policies dans AWS."
+description: Comment créer des rôles IAM personnalisés avec boundary policies dans AWS.
 translationKey: tutorials/aws-application-roles
 draft: false
 tags:
@@ -8,6 +8,7 @@ tags:
   - IAM
 categories:
   - Tutoriels
+  - AWS
 ---
 
 Nos clients sont autorisés à créer des rôles d'application personnalisés / rôles IAM, mais pour prévenir l'escalade de privilèges, une limite d'autorisation appelée `SSCCustomRoleBoundaryPolicy` est requise. La combinaison de limites d'autorisations et de politiques de contrôle des services est une fonctionnalité avancée qui limite les permissions maximales qu'un rôle peut accorder à une entité IAM. La limite d'autorisation d'une entité lui permet d'effectuer uniquement les actions autorisées à la fois par ses politiques basées sur l'identité, et par ses limites d'autorisations.

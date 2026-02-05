@@ -28,12 +28,14 @@
         {{ $intro | safeHTML }}
         {{ $showToc := or .Params.showToc .Site.Params.showToc }}
         {{ if and $showToc .TableOfContents }}
-        <gcds-fieldset
-          fieldset-id="field-toc"
-          legend=""
-          class="mb-400">
-            {{ .TableOfContents }}
-          </gcds-fieldset>
+          <gcds-details details-title="{{ i18n "toc" }}" class="mb-400 toc">
+            {{/*  <gcds-fieldset
+              fieldset-id="field-toc"
+              legend=""
+              class="mb-400">  */}}
+                {{ .TableOfContents }}
+              {{/*  </gcds-fieldset>  */}}
+          </gcds-details>
         {{ end }}
         {{ $content := .Content | replaceRE `(?s:<p>(.*?)</p>)`  (printf "<gcds-text character-limit=\"%v\">$1</gcds-text>" (not (.Page.Params.disableCharacterLimit | default .Site.Params.disableCharacterLimit))) }}
         {{ $content | safeHTML }}

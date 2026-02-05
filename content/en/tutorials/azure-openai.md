@@ -9,6 +9,7 @@ tags:
   - CLI
 categories:
   - Tutorials
+  - Azure
 ---
 
 {{< notice title="Note">}}
