@@ -63,6 +63,7 @@ GC Cloud One LaunchPad provides a secure, cloud-based environment for testing an
 - **Cost and Consumption Management**: Users are responsible for managing their agreed-upon budgetary consumption limits and proactively monitoring resource usage. Any overages beyond the allocated budget are subject to payment or cost recovery. SSC reserves the right to implement cost control measures if necessary. If a user anticipates a need for burst compute or a drastic increase in cloud resource consumption, they must notify their responsible experimentation lead at SSC at least two business days prior to executing the test.
 - **Time-Limited Occupancy**: Use is limited to specific short-term projects, with an occupancy range of **3 to 12 months**.
 - **Scale of Consumption**: The default is small-scale, with large-scale consumption available upon request and approval.
+- **Secure Secret Management**: Ensure that sensitive credentials—such as API keys, tokens, or passwords—are never hardcoded or committed to any repository (public or private); instead, use approved environment variables or secret management tools, and immediately rotate any credentials that are accidentally exposed.
 
 ## Connectivity and Data Handling
 
