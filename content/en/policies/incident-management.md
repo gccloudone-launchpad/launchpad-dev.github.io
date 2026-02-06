@@ -61,10 +61,3 @@ Incident response includes planning for and actively managing incidents that can
 #### Policy Review Cycle
 
 This policy will be reviewed annually with the process and procedures.
-
-## Change Log
-
-| Date | Author | Description of Change |
-| ---- | ---- | ---- |
-| 2023-08-02 | John Nephin | Initial Version |
-{ .full-width } <!-- markdownlint-disable-line MD056 MD055 -->

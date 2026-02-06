@@ -25,10 +25,3 @@ Anyone planning on using or creating an open source project should become famili
   Provides guidance on how to publish Open Source Software in the Government of Canada.
 - [GC Open Resource Exchange](https://code.open.canada.ca/en/index.html)  
   Lists services for open source code, software, standards, partnerships and design. Also lists open source repositories and catalogs in the Government of Canada.
-
-## Change Log
-
-| Date | Author | Description of Change |
-| --- | --- | --- |
-| 2022-10-04 | John Nephin | Initial draft reviewed and approved with team |
-{ .full-width } <!-- markdownlint-disable-line MD056 MD055 -->

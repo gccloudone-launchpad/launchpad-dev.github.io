@@ -1,6 +1,6 @@
 ---
 title: Audit and Accountability
-description: ""
+description: "sDfasdfasdf"
 translationKey: policy/audit-and-accoutability
 draft: false
 tags: 
@@ -204,11 +204,3 @@ Employees who violate this policy may be subject to appropriate disciplinary act
 ### Policy Exceptions
 
 Requests for exceptions to this policy shall be reviewed and approved by the LaunchPad Management team and its Director.
-
-## Change Log
-
-| Date | Author | Description of Change |
-| --- | --- | --- |
-| 2023-03-01 | John Nephin | Initial draft reviewed and approved with team |
-| 2023-03-01 | John Nephin | Added Change Log section |
-{ .full-width } <!-- markdownlint-disable-line MD056 MD055 -->
