@@ -5,35 +5,49 @@ main:
     weight: 1
     identifier: home
 
+#TOP LEVEL
+  - name: Services
+    identifier: services
+    weight: 2
+  # LEVEL 1
+  - name: Experimentation
+    parent: services
+    pageRef: /services/experimentation
+    weight: 1
+  - name: On-Demand Compute
+    parent: services
+    pageRef: /services/ondemand-compute
+    weight: 2
+
 
 #TOP LEVEL
   - name: About
     identifier: about
-    weight: 2
+    weight: 3
   # LEVEL 1
   - name: About Us
     parent: about
     pageRef: /about-us
     weight: 1
-
+  - name: Glossary
+    parent: about
+    pageRef: /glossary
+    weight: 2
   - name: Terms & Conditions
     parent: about
     pageRef: /terms-conditions
-    weight: 2
-  
+    weight: 3
   - name: Policies
     parent: about
     pageRef: /policies
-    weight: 3
-
+    weight: 4
   - name: Contact Us
     parent: about
     pageRef: /contact-us
-    weight: 4
-
+    weight: 5
 
 #TOP LEVEL
-  - weight: 3
-    name: Tutorials
+  - name: Tutorials
     identifier: tutorials
     pageRef: /tutorials
+    weight: 4
