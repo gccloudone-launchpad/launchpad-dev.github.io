@@ -202,11 +202,3 @@ Les employés qui enfreignent cette politique peuvent faire l'objet de mesures d
 ### Exceptions à la politique
 
 Les demandes d'exception à cette politique doivent être révisées et approuvées par l'équipe de gestion et le directeur de GCCO LaunchPad.
-
-## Journal des modifications
-
-| Date | Auteur | Description de la modification |
-| --- | --- | --- |
-| 2023-03-01 | John Nephin | Ébauche initiale révisée et approuvée avec l'équipe |
-| 2023-03-01 | John Nephin | Ajout de la section Journal des modifications |
-{ .full-width } <!-- markdownlint-disable-line MD056 MD055 -->

@@ -132,11 +132,3 @@ Requests for exceptions to this policy shall be reviewed by the LaunchPad team a
 ## Responsible Department
 
 LaunchPad
-
-## Change Log
-
-| Date | Author | Description of Change |
-| --- | --- | --- |
-| 2022-04-06 | John Nephin | Initial draft reviewed and approved with team |
-| 2023-07-24 | John Nephin | Added Change Log section |
-{ .full-width } <!-- markdownlint-disable-line MD056 MD055 -->

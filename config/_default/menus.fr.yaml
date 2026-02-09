@@ -5,35 +5,48 @@ main:
     weight: 1
     identifier: home
 
+#TOP LEVEL
+  - name: Services
+    identifier: services
+    weight: 2
+  # LEVEL 1
+  - name: Experimentation
+    parent: services
+    pageRef: /services/experimentation
+    weight: 1
+  - name: Calcul sur demande
+    parent: services
+    pageRef: /services/calcul-sur-demande
+    weight: 2
 
 #TOP LEVEL
   - name: A Propos
     identifier: about
-    weight: 2
+    weight: 3
   # LEVEL 1
   - name: A Propos
     parent: about
     pageRef: /a-propos
     weight: 1
-
+  - name: Glossaire
+    parent: about
+    pageRef: /glossaire
+    weight: 2
   - name: Termes & Conditions
     parent: about
     pageRef: /termes-conditions
-    weight: 2
-  
+    weight: 3
   - name: Politiques
     parent: about
     pageRef: /politiques
-    weight: 3
-
+    weight: 4
   - name: Contactez Nous
     parent: about
     pageRef: /contactez-nous
-    weight: 4
-
+    weight: 5
 
 #TOP LEVEL
-  - weight: 3
-    name: Tutoriels
+  - name: Tutoriels
     identifier: tutorials
     pageRef: /tutoriels
+    weight: 4
