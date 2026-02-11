@@ -51,3 +51,19 @@ main:
     identifier: tutorials
     pageRef: /tutorials
     weight: 4
+
+private:
+#TOP LEVEL
+  - name: Private Pages
+    pageRef: /private
+    weight: 1
+    identifier: private
+    # LEVEL 1
+  - name: Tutorials
+    parent: private
+    pageRef: /tutorials
+    weight: 1
+  - name: Foobar
+    parent: private
+    pageRef: /private/foobar
+    weight: 2
