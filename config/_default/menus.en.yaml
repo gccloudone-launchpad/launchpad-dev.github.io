@@ -49,5 +49,29 @@ main:
 #TOP LEVEL
   - name: Tutorials
     identifier: tutorials
-    pageRef: /tutorials
+    weight: 4
+  # LEVEL 1
+  - name: AWS
+    parent: tutorials
+    pageRef: /tutorials/aws
+    weight: 1
+  - name: Azure
+    parent: tutorials
+    pageRef: /tutorials/azure
+    weight: 2
+  - name: GCP
+    parent: tutorials
+    pageRef: /tutorials/gcp
+    weight: 3
+  - name: General
+    parent: tutorials
+    pageRef: /tutorials/general
+    weight: 4
+
+
+
+#TOP LEVEL
+  - name: Temp
+    identifier: temp
+    pageRef: /temp
     weight: 4
