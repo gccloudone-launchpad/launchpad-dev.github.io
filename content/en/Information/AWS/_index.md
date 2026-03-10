@@ -1,6 +1,6 @@
 ---
 title: AWS
-description: "AWS tutorials"
-translationKey: tutorials-aws
+description: "AWS information"
+translationKey: information-aws
 draft: false
 ---

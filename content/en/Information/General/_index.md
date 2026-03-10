@@ -1,6 +1,6 @@
 ---
 title: General
-description: "General tutorials"
-translationKey: tutorials-general
+description: "General information"
+translationKey: information-general
 draft: false
 ---

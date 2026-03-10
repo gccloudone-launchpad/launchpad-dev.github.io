@@ -1,6 +1,6 @@
 ---
 title: Azure
-description: "Azure tutorials"
-translationKey: tutorials-azure
+description: "Azure information"
+translationKey: information-azure
 draft: false
 ---

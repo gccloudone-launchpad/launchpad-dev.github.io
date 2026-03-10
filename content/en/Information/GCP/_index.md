@@ -1,6 +1,6 @@
 ---
 title: GCP
-description: "GCP tutorials"
-translationKey: tutorials-gcp
+description: "GCP information"
+translationKey: information-gcp
 draft: false
 ---
