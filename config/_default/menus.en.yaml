@@ -52,18 +52,22 @@ main:
     weight: 5
   # LEVEL 1
   - name: AWS
+    identifier: tutorials-aws
     parent: tutorials
     pageRef: /tutorials/aws
     weight: 2
   - name: Azure
+    identifier: tutorials-azure
     parent: tutorials
     pageRef: /tutorials/azure
     weight: 3
   - name: GCP
+    identifier: tutorials-gcp
     parent: tutorials
     pageRef: /tutorials/gcp
     weight: 4
   - name: General
+    identifier: tutorials-general
     parent: tutorials
     pageRef: /tutorials/general
     weight: 1
@@ -74,18 +78,22 @@ main:
     weight: 4
   # LEVEL 1
   - name: AWS
+    identifier: information-aws
     parent: information
     pageRef: /information/aws
     weight: 2
   - name: Azure
+    identifier: information-azure
     parent: information
     pageRef: /information/azure
     weight: 3
   - name: GCP
+    identifier: information-gcp
     parent: information
     pageRef: /information/gcp
     weight: 4
   - name: General
+    identifier: information-general
     parent: information
     pageRef: /information/general
     weight: 1
