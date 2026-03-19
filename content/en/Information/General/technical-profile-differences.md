@@ -2,7 +2,7 @@
 description: Technical differences between data profiles
 title: Technical differences per data profiles
 translationKey: technical-data-profiles
-draft: true
+draft: false
 ---
 
 This page describes the technical differences and limitations you'll face depending on which profile you've chosen. This can help you as a reminder of the technical limitations and how to fix them. It can also help you choosing wether or not its easier sanitizing your data versus using a profile 3.
