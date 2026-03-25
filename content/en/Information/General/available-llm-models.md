@@ -5,7 +5,7 @@ translationKey: llm-model-availability
 draft: false
 ---
 
-{{% notice type="warning" title="Data Classification" %}}
+{{% notice type="warning" title="Updates on data" %}}
  This page might be out of date as it is updated manually and stands more as a informative page than a base of truth. Follow the links below for more up to date information and pricing as well.
 {{% /notice %}}
 
@@ -66,6 +66,7 @@ Other AI model pricing: [Azure](https://azure.microsoft.com/en-us/pricing/detail
 | Alibaba | qwen3-32b | Chat completion, Reasoning | Fine tuning only | 2025-04-29 |
 | Black Forest Labs | FLUX-1.1-pro | Text to image | Global endpoint, Data Zone | 2024-10-03 |
 | Black Forest Labs | FLUX.1-Kontext-pro | Text to image, Image to image, Image editing | Global endpoint, Data Zone | 2025-05-06 |
+| Black Forest Labs | FLUX.2-flex | Text to image, Image to image | Global endpoint, Data Zone | 2025 |
 | Black Forest Labs | FLUX.2-pro | Text to image, Image to image | Global endpoint, Data Zone | 2025-11 |
 | Cohere | cohere-command-a | Chat completion, Tool use, RAG | Global endpoint | 2025-03-13 |
 | Cohere | Cohere-rerank-v4.0-fast | Text reranking, Semantic search | Global endpoint | 2025-04 |
@@ -86,6 +87,7 @@ Other AI model pricing: [Azure](https://azure.microsoft.com/en-us/pricing/detail
 | Moonshot AI | Kimi-K2-Thinking | Chat completion, Reasoning | Global endpoint | 2025-07 |
 | Moonshot AI | Kimi-K2.5 | Chat completion, Long context, Tool use | Global endpoint | 2025-07 |
 | OpenAI | codex-mini | Code generation, Responses | Global endpoint | 2025-05-16 |
+| OpenAI | computer-use-preview | Computer use | Global endpoint | 2025-03-11 |
 | OpenAI | dall-e-3 | Text to image | Canada East | 2023-10-03 |
 | OpenAI | davinci-002 | Text completion, Fine-tuning base | Canada East | 2023-09-22 |
 | OpenAI | gpt-image-1 | Text to image, Image to image, Image editing | Global endpoint | 2025-04-15 |
@@ -112,7 +114,7 @@ Other AI model pricing: [Azure](https://azure.microsoft.com/en-us/pricing/detail
 | OpenAI | gpt-4o-transcribe-diarize | Speech to text, Transcription, Speaker diarization | Global endpoint | 2025-10-15 |
 | OpenAI | gpt-5 | Chat completion, Responses, Multimodal, Tool use | Canada East, Global endpoint | 2025-08-07 |
 | OpenAI | gpt-5-chat | Chat completion, Responses | Canada East, Global endpoint | 2025-10-03 |
-| OpenAI | gpt-5-codex | Code generation, Chat completion, Responses | Global endpoint | 2025-09-15 |
+| OpenAI | gpt-5-codex | Code generation, Chat completion, Responses | Global endpoint | 2025-09-11 |
 | OpenAI | gpt-5-mini | Chat completion, Responses | Canada East, Global endpoint | 2025-08-07 |
 | OpenAI | gpt-5-nano | Chat completion, Responses | Canada East, Global endpoint | 2025-08-07 |
 | OpenAI | gpt-5-pro | Chat completion, Responses, Tool use | Global endpoint | 2025-10-06 |
@@ -124,11 +126,16 @@ Other AI model pricing: [Azure](https://azure.microsoft.com/en-us/pricing/detail
 | OpenAI | gpt-5.2 | Chat completion, Responses, Tool use | Global endpoint | 2025-12-11 |
 | OpenAI | gpt-5.2-chat | Chat completion, Responses | Global endpoint | 2025-12-11 |
 | OpenAI | gpt-5.2-codex | Code generation, Responses | Global endpoint | 2026-01-14 |
-| OpenAI | gpt-5.3-codex | Code generation, Responses | Global endpoint | |
+| OpenAI | gpt-5.3-codex | Code generation, Responses | Global endpoint | 2026-02-24 |
+| OpenAI | gpt-5.4 | Chat completion, Responses, Reasoning, Multimodal, Tool use | Global endpoint, Data Zone | 2026-03-05 |
+| OpenAI | gpt-5.4-mini | Chat completion, Responses, Reasoning, Multimodal, Tool use | Global endpoint, Data Zone | 2026-03-17 |
+| OpenAI | gpt-5.4-nano | Chat completion, Responses, Reasoning | Global endpoint, Data Zone | 2026-03-17 |
+| OpenAI | gpt-5.4-pro | Chat completion, Responses, Reasoning, Tool use | Global endpoint | 2026-03-05 |
 | OpenAI | gpt-audio | Audio generation, Audio input/output | Global endpoint | 2025-08-28 |
-| OpenAI | gpt-audio-1.5 | Audio generation, Audio input/output | Global endpoint | |
+| OpenAI | gpt-audio-1.5 | Audio generation, Audio input/output | Global endpoint | 2026-02-23 |
 | OpenAI | gpt-audio-mini | Audio generation, Audio input/output | Global endpoint | 2025-12-15 |
 | OpenAI | gpt-oss-120b | Chat completion | Global endpoint | |
+| OpenAI | gpt-oss-20b | Chat completion | Managed compute | |
 | OpenAI | gpt-realtime | Realtime audio, Audio generation | Global endpoint | 2025-08-28 |
 | OpenAI | gpt-realtime-1.5 | Realtime audio, Audio generation | Global endpoint | 2026-02-23 |
 | OpenAI | gpt-realtime-mini | Realtime audio, Audio generation | Global endpoint | 2025-12-15 |
@@ -154,6 +161,8 @@ Other AI model pricing: [Azure](https://azure.microsoft.com/en-us/pricing/detail
 | xAI | grok-4 | Chat completion, Reasoning, Tool use | Global endpoint, Data Zone | 2025-07-10 |
 | xAI | grok-4-fast-non-reasoning | Chat completion | Global endpoint, Data Zone | 2025-07-10 |
 | xAI | grok-4-fast-reasoning | Chat completion, Reasoning | Global endpoint, Data Zone | 2025-07-10 |
+| xAI | grok-4.1-fast-non-reasoning | Chat completion | Global endpoint, Data Zone | 2026 |
+| xAI | grok-4.1-fast-reasoning | Chat completion, Reasoning | Global endpoint, Data Zone | 2026 |
 | xAI | grok-code-fast-1 | Code generation, Chat completion | Global endpoint, Data Zone | 2025-08 |
 
 ## AWS
@@ -211,6 +220,7 @@ Pricing information: [Pricing information GCP](https://cloud.google.com/vertex-a
 | Alibaba | Qwen3-Next-80B Thinking | Chat completion, Reasoning (thinking model), Code generation | Serverless | 2025 |
 | Anthropic | Claude 3.5 Sonnet | Chat completion, Code generation, Complex reasoning | Serverless | 2024-06-20 |
 | Anthropic | Claude 3.5 Sonnet v2 | Chat completion, Code generation, Agentic, Complex reasoning | Serverless | 2024-10-22 |
+| Anthropic | Claude 3.7 Sonnet | Chat completion, Code generation, Agentic, Complex reasoning | Serverless | 2025-02-24 |
 | Anthropic | Claude Haiku 4.5 | Chat completion, Code generation, Tool use, High throughput | Serverless | 2025-07-22 |
 | Anthropic | Claude Opus 4 | Chat completion, Reasoning, Code generation, Agentic, Long-running tasks | Serverless | 2025-05-22 |
 | Anthropic | Claude Opus 4.1 | Chat completion, Reasoning, Code generation, Agentic, Long-running tasks | Serverless | 2025-07 |
