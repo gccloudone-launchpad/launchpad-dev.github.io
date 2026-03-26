@@ -31,7 +31,7 @@ Ce profil est conçu pour les charges de travail sensibles et peut contenir des 
 
 - L'accès aux VM se fait via le bastion fourni (aucun port SSH ou RDP ouvert).
 - Les ressources se trouvent dans des VNET fournis, connectés à un VNET général derrière notre pare-feu.
-- L'ouverture de ports ou d'adresses IP vers Internet nécessite la suppression de la politique après approbation par notre équipe.
+- L'ouverture de ports ou d'adresses IP vers Internet nécessite la suppression de la politique après approbation par notre équipe. L'accès sortant est activé par défaut via HTTPS / HTTP.
 
 #### AWS
 

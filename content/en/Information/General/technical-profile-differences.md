@@ -31,7 +31,7 @@ This profile is designed for sensitive workloads and can contain up to protected
 
 - Accessing VMs is through our provided bastion (no SSH or RDP ports open).
 - Resources sit in provided VNETs that are connected through a general VNET behind our provided firewall.
-- Opening ports or IPs to the Internet needs policy removal after approval by our team.
+- Opening ports or IPs to the Internet needs policy removal after approval by our team. Outbound access is enabled over HTTPS / HTTP by default.
 
 #### AWS
 
