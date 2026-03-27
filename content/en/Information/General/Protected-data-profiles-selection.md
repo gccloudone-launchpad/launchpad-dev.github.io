@@ -2,7 +2,7 @@
 description: Effects of GoC Guardrails policies on usage of our environment
 title: Cloud guardrails profiles and protected data differences
 translationKey: protected-data-profiles
-draft: true
+draft: false
 ---
 
 As we now offer three different levels of security for protected information. The information in this page will help make out what will be needed in the space you go to following our environment as well as to see what are the limitations you'll face within our environment when using protected data.

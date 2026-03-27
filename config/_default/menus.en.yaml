@@ -97,10 +97,3 @@ main:
     parent: information
     pageRef: /information/general
     weight: 1
-
-
-#TOP LEVEL
-  - name: Temp
-    identifier: temp
-    pageRef: /temp
-    weight: 6

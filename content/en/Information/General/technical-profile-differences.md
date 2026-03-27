@@ -2,7 +2,7 @@
 description: Technical differences between data profiles
 title: Technical differences per data profiles
 translationKey: technical-data-profiles
-draft: true
+draft: false
 ---
 
 This page describes the technical differences and limitations you'll face depending on which profile you've chosen. This can help you as a reminder of the technical limitations and how to fix them. It can also help you choosing wether or not its easier sanitizing your data versus using a profile 3.
@@ -31,7 +31,7 @@ This profile is designed for sensitive workloads and can contain up to protected
 
 - Accessing VMs is through our provided bastion (no SSH or RDP ports open).
 - Resources sit in provided VNETs that are connected through a general VNET behind our provided firewall.
-- Opening ports or IPs to the Internet needs policy removal after approval by our team.
+- Opening ports or IPs to the Internet needs policy removal after approval by our team. Outbound access is enabled over HTTPS / HTTP by default.
 
 #### AWS
 
