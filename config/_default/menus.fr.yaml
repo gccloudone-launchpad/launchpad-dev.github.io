@@ -18,6 +18,14 @@ main:
     parent: services
     pageRef: /services/calcul-sur-demande
     weight: 2
+  - name: Consultation
+    parent: services
+    pageRef: /services/consultation
+    weight: 3
+  - name: Feuille de route
+    parent: services
+    pageRef: /services/feuille-de-route
+    weight: 10
 
 #TOP LEVEL
   - name: A Propos
@@ -28,9 +36,9 @@ main:
     parent: about
     pageRef: /a-propos
     weight: 1
-  - name: Glossaire
+  - name: Études de cas
     parent: about
-    pageRef: /glossaire
+    pageRef: /a-propos/etudes-de-cas
     weight: 2
   - name: Termes & Conditions
     parent: about
@@ -42,7 +50,7 @@ main:
     weight: 4
   - name: Contactez Nous
     parent: about
-    pageRef: /contactez-nous
+    pageRef: /a-propos/contactez-nous
     weight: 5
 
 #TOP LEVEL
@@ -50,26 +58,31 @@ main:
     identifier: information
     weight: 4
   # LEVEL 1
-  - name: AWS
-    identifier: information-aws
-    parent: information
-    pageRef: /information/aws
-    weight: 2
-  - name: Azure
-    identifier: information-azure
-    parent: information
-    pageRef: /information/azure
-    weight: 3
-  - name: GCP
-    identifier: information-gcp
-    parent: information
-    pageRef: /information/gcp
-    weight: 4
   - name: General
     identifier: information-general
     parent: information
     pageRef: /information/general
     weight: 1
+  - name: Glossaire
+    parent: about
+    pageRef: /information/glossaire
+    weight: 2
+  - name: AWS
+    identifier: information-aws
+    parent: information
+    pageRef: /information/aws
+    weight: 3
+  - name: Azure
+    identifier: information-azure
+    parent: information
+    pageRef: /information/azure
+    weight: 4
+  - name: GCP
+    identifier: information-gcp
+    parent: information
+    pageRef: /information/gcp
+    weight: 5
+
 
 #TOP LEVEL
   - name: Tutoriels
@@ -77,6 +90,11 @@ main:
     pageRef: /tutoriels
     weight: 5
   # LEVEL 1
+  - name: General
+    identifier: tutorials-general
+    parent: tutorials
+    pageRef: /tutoriels/general
+    weight: 1
   - name: AWS
     identifier: tutorials-aws
     parent: tutorials
@@ -92,8 +110,3 @@ main:
     parent: tutorials
     pageRef: /tutoriels/gcp
     weight: 4
-  - name: General
-    identifier: tutorials-general
-    parent: tutorials
-    pageRef: /tutoriels/general
-    weight: 1
