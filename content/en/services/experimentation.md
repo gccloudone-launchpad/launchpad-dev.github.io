@@ -13,6 +13,10 @@ categories: []
 
 foopbar managed, good stuff happens
 
+### IaaS
+
+### PaaS
+
 ## Delegated
 
 You do the work, we bring the cloud
