@@ -14,7 +14,11 @@ Experimentation is our core service. Whether you're validating a new idea, testi
 Experiments typically run between **3 and 12 months**, giving your team enough time to test, learn, and draw meaningful conclusions.
 
 {{< needs-review >}}
-Expand on the experiment lifecycle — what happens at intake, during the experiment, and at the end (wind-down, path to production, etc.)? How does the lifecycle differ across Managed, Delegated, and Full-Service models? This could just be a link to the Journey section (CLient)
+Expand on the experiment lifecycle — what happens at intake, during the experiment, and at the end (wind-down, path to production, etc.)? How does the lifecycle differ across Managed, Delegated, and Full-Service models? This could just be a link to the Journey section (Client)
+{{< /needs-review >}}
+
+{{< needs-review >}}
+Add a very basic image / process that looks like this: Intake -> Kickoff -> Experiment -> Closeout
 {{< /needs-review >}}
 
 ## Funding
@@ -41,6 +45,11 @@ Here's what that looks like in practice:
 - **Full visibility into your spending.** Cloud costs can add up quickly if you're not paying attention. We give you clear, up-to-date information on what you're spending and why — keeping you informed and in control from a FinOps (financial operations) perspective. This applies whether you're using centrally funded resources or bringing your own budget to the table.
 - **Access to the full cloud catalogue.** Through our agreements with Google Cloud (GCP), Amazon Web Services (AWS), and Microsoft Azure, you get access to almost any service each provider offers — without having to navigate Government of Canada procurement processes or security assessments yourself. We've already done that work, so you can start using the services you need right away.
 
+
+{{< needs-review >}}
+Put this in the glossary
+{{< /needs-review >}}
+
 ### IaaS
 
 IaaS stands for **Infrastructure as a Service**. In plain terms, it means you get access to the raw building blocks of the cloud: virtual machines, storage, and networking. You decide what to install on them and how to configure them — we just make sure the infrastructure is there and running.
@@ -66,10 +75,10 @@ Here's what that means for you:
 - **A familiar face closer to home.** Your delegated SME understands your department's context, priorities, and constraints. They can help you navigate the financial side of cloud experimentation, chart a path toward production, and connect you with the right people — whether that's within your department or across government — to unlock learning and innovation.
 - **Better innovation from within.** Having a delegated SME means your department builds its own cloud expertise over time. That knowledge doesn't disappear when a project ends — it stays in your team and benefits future initiatives.
 
-Interested in becoming a delegated department or SME? [Contact us]({{< globallink "contact-us" >}}) — we'd love to work with you to set that up.
+Interested in becoming a delegated department or SME? [Contact us]({{< globallink "about-us/contact-us" >}}) — we'd love to work with you to set that up.
 
 {{< needs-review >}}
-Maybe add a few departments that already have a delegated base? Stats Can, DFO, PHAC, etc.?
+Maybe add a few departments that already have a delegated base? Stats Can, DFO, PHAC, DRDC etc.?
 {{< /needs-review >}}
 
 ## Full-Service
@@ -78,7 +87,7 @@ Have a complex application or service you need to build or experiment with, but 
 
 This option is ideal for teams with a clear problem to solve but limited technical capacity to tackle it on their own. We work with you to understand what you need, and then we build it.
 
-> **Before submitting an intake request**, please [reach out to us]({{< globallink "contact-us" >}}) directly. Our internal capacity is limited, and we want to make sure we can give your project the attention it deserves before committing to it.
+> **Before submitting an intake request**, please [reach out to us]({{< globallink "about-us/contact-us" >}}) directly. Our internal capacity is limited, and we want to make sure we can give your project the attention it deserves before committing to it.
 
 {{< needs-review >}}
 Add a RACI table showing who is Responsible, Accountable, Consulted, and Informed for key activities (e.g. environment setup, security, billing, support) across the Managed, Delegated, and Full-Service models.
