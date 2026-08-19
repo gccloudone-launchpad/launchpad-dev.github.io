@@ -16,7 +16,9 @@ Experiments typically run between **3 and 12 months**, giving your team enough t
 {{< needs-review >}}
 Expand on the experiment lifecycle — what happens at intake, during the experiment, and at the end (wind-down, path to production, etc.)? How does the lifecycle differ across Managed, Delegated, and Full-Service models? This could just be a link to the Journey section (Client)
 {{< /needs-review >}}
-----
+
+-
+
 {{< needs-review >}}
 Add a very basic image / process that looks like this: Intake -> Kickoff -> Experiment -> Closeout
 {{< /needs-review >}}
