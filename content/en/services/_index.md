@@ -21,5 +21,3 @@ Managed is generally centrally funded for smaller costs, but might be cost-recov
 Maybe have a calculator showing Class D estimate
 Mention the experiment lifecycle, and how each service model is slightly different
 Maybe have a RACI table that explains who's responsible for what in each model
-
-
