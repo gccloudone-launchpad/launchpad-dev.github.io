@@ -41,7 +41,10 @@ body.character-limit table.full-width {
 
 span.needs-review {
   background-color: yellow;
+}
+
+span.needs-review--block {
   display: block;
-  margin: 1rem;
-  padding: 1rem;
+  margin: 0.75rem 0;
+  padding: 0.75rem;
 }

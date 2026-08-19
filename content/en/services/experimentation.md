@@ -9,17 +9,14 @@ categories: []
 
 {{< translation-note >}}
 
-Experimentation is our core service. Whether you're validating a new idea, testing a technology, or running a proof of concept, we offer three service models to match your team's needs and capacity: **Managed**, **Delegated**, and **Full-Service**. Each gives you access to secure, government-compliant cloud environments — the difference lies in how much support we provide and how costs are handled.
+Experimentation is our core service. Whether you're validating a new idea, testing a technology, or running a proof of concept, we offer three service models to match your team's needs and capacity: **Managed**, **Delegated**, and **Full-Service**. Each gives you access to secure, government-compliant cloud environments — the difference {{< needs-review >}}lies in how much support we provide and how costs are handled.{{< /needs-review >}}
 
 Experiments typically run between **3 and 12 months**, giving your team enough time to test, learn, and draw meaningful conclusions.
 
-{{< needs-review >}}
+{{< needs-review mode="block" >}}
 Expand on the experiment lifecycle — what happens at intake, during the experiment, and at the end (wind-down, path to production, etc.)? How does the lifecycle differ across Managed, Delegated, and Full-Service models? This could just be a link to the Journey section (Client)
 {{< /needs-review >}}
-
--
-
-{{< needs-review >}}
+{{< needs-review mode="block" >}}
 Add a very basic image / process that looks like this: Intake -> Kickoff -> Experiment -> Closeout
 {{< /needs-review >}}
 
@@ -43,7 +40,7 @@ Here's what that looks like in practice:
 - **Full visibility into your spending.** Cloud costs can add up quickly if you're not paying attention. We give you clear, up-to-date information on what you're spending and why — keeping you informed and in control from a FinOps (financial operations) perspective. This applies whether you're using centrally funded resources or bringing your own budget to the table.
 - **Access to the full cloud catalogue.** Through our agreements with Google Cloud (GCP), Amazon Web Services (AWS), and Microsoft Azure, you get access to almost any service each provider offers — without having to navigate Government of Canada procurement processes or security assessments yourself. We've already done that work, so you can start using the services you need right away.
 
-{{< needs-review >}}
+{{< needs-review mode="block" >}}
 Put this in the glossary (IaaS vs PaaS):
 {{< /needs-review >}}
 
@@ -74,7 +71,7 @@ Here's what that means for you:
 
 Interested in becoming a delegated department or SME? [Contact us]({{< globallink "about-us/contact-us" >}}) — we'd love to work with you to set that up.
 
-{{< needs-review >}}
+{{< needs-review mode="block" >}}
 Maybe add a few departments that already have a delegated base? Stats Can, DFO, PHAC, DRDC etc.?
 {{< /needs-review >}}
 
@@ -86,6 +83,6 @@ This option is ideal for teams with a clear problem to solve but limited technic
 
 > **Before submitting an intake request**, please [reach out to us]({{< globallink "about-us/contact-us" >}}) directly. Our internal capacity is limited, and we want to make sure we can give your project the attention it deserves before committing to it.
 
-{{< needs-review >}}
+{{< needs-review mode="block" >}}
 Add a RACI table showing who is Responsible, Accountable, Consulted, and Informed for key activities (e.g. environment setup, security, billing, support) across the Managed, Delegated, and Full-Service models.
 {{< /needs-review >}}
