@@ -38,3 +38,10 @@ body.character-limit table.full-width {
   padding: 0;
   list-style-type: none;
 }
+
+span.needs-review {
+  background-color: yellow;
+  display: block;
+  margin: 1rem;
+  padding: 1rem;
+}
