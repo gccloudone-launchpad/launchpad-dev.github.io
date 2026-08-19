@@ -16,7 +16,7 @@ Experiments typically run between **3 and 12 months**, giving your team enough t
 {{< needs-review >}}
 Expand on the experiment lifecycle — what happens at intake, during the experiment, and at the end (wind-down, path to production, etc.)? How does the lifecycle differ across Managed, Delegated, and Full-Service models? This could just be a link to the Journey section (Client)
 {{< /needs-review >}}
-
+----
 {{< needs-review >}}
 Add a very basic image / process that looks like this: Intake -> Kickoff -> Experiment -> Closeout
 {{< /needs-review >}}
@@ -28,10 +28,6 @@ How you pay for your experiment depends on the service model:
 - **Managed** — Generally centrally funded for smaller experiments. If your expected cloud spend is significant, a cost-recovery arrangement may apply.
 - **Delegated** — Cost-recovery. Your department covers the cloud costs associated with your experiment.
 - **Full-Service** — Cost-recovery. You bring the budget; we deliver the work.
-
-{{< needs-review >}}
-Maybe add a Class D cost estimate calculator to help teams understand what to budget for?
-{{< /needs-review >}}
 
 ## Managed
 
@@ -47,7 +43,7 @@ Here's what that looks like in practice:
 
 
 {{< needs-review >}}
-Put this in the glossary
+Put this in the glossary (IaaS vs PaaS):
 {{< /needs-review >}}
 
 ### IaaS
