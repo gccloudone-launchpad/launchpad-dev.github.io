@@ -32,6 +32,26 @@ A cost-recovery basis means a service is billed to clients to cover its costs (f
 
 High-Performance Computing (HPC) refers to dedicated infrastructure designed for large-scale, sustained computing workloads, distinct from the short-term compute capacity offered by services like PIE.
 
+## I
+
+### IaaS
+
+IaaS stands for **Infrastructure as a Service**. In plain terms, it means you get access to the raw building blocks of the cloud: virtual machines, storage, and networking. You decide what to install on them and how to configure them — we just make sure the infrastructure is there and running.
+
+This option is best suited for teams that have specific technical requirements, need full control over their environment, or are running workloads that don't fit neatly into a pre-packaged platform. If your experiment involves custom software stacks, specialized operating system configurations, or anything that requires you to "get close to the metal," IaaS is likely the right fit.
+
+Keep in mind that with more control comes more responsibility on your end — your team will need to manage the software running on top of the infrastructure. We handle the cloud layer; you handle what's on it.
+
+## P
+
+### PaaS
+
+PaaS stands for **Platform as a Service**. Rather than giving you raw infrastructure to configure yourself, PaaS gives you a ready-to-use platform — think managed databases, container hosting environments, serverless functions, or machine learning workbenches. The underlying servers and networking are abstracted away, so you can focus on your application or analysis without worrying about what's running underneath.
+
+This is a great fit for teams who want to move fast and don't want to spend time configuring and maintaining infrastructure. If your experiment involves deploying an app, running a data pipeline, or training a model, PaaS services let you get there more quickly and with less operational overhead.
+
+In short: IaaS gives you the land to build on; PaaS gives you a house that's mostly move-in ready.
+
 ## S
 
 ### Sandbox

@@ -40,26 +40,6 @@ Here's what that looks like in practice:
 - **Full visibility into your spending.** Cloud costs can add up quickly if you're not paying attention. We give you clear, up-to-date information on what you're spending and why — keeping you informed and in control from a FinOps (financial operations) perspective. This applies whether you're using centrally funded resources or bringing your own budget to the table.
 - **Access to the full cloud catalogue.** Through our agreements with Google Cloud (GCP), Amazon Web Services (AWS), and Microsoft Azure, you get access to almost any service each provider offers — without having to navigate Government of Canada procurement processes or security assessments yourself. We've already done that work, so you can start using the services you need right away.
 
-{{< needs-review mode="block" >}}
-Put this in the glossary (IaaS vs PaaS):
-{{< /needs-review >}}
-
-### IaaS
-
-IaaS stands for **Infrastructure as a Service**. In plain terms, it means you get access to the raw building blocks of the cloud: virtual machines, storage, and networking. You decide what to install on them and how to configure them — we just make sure the infrastructure is there and running.
-
-This option is best suited for teams that have specific technical requirements, need full control over their environment, or are running workloads that don't fit neatly into a pre-packaged platform. If your experiment involves custom software stacks, specialized operating system configurations, or anything that requires you to "get close to the metal," IaaS is likely the right fit.
-
-Keep in mind that with more control comes more responsibility on your end — your team will need to manage the software running on top of the infrastructure. We handle the cloud layer; you handle what's on it.
-
-### PaaS
-
-PaaS stands for **Platform as a Service**. Rather than giving you raw infrastructure to configure yourself, PaaS gives you a ready-to-use platform — think managed databases, container hosting environments, serverless functions, or machine learning workbenches. The underlying servers and networking are abstracted away, so you can focus on your application or analysis without worrying about what's running underneath.
-
-This is a great fit for teams who want to move fast and don't want to spend time configuring and maintaining infrastructure. If your experiment involves deploying an app, running a data pipeline, or training a model, PaaS services let you get there more quickly and with less operational overhead.
-
-In short: IaaS gives you the land to build on; PaaS gives you a house that's mostly move-in ready.
-
 ## Delegated
 
 In the Delegated model, your department takes on a more active role in supporting its own cloud experimenters. Rather than relying solely on our central team, a designated Subject Matter Expert (SME) within your department works alongside us to help your teams succeed.
