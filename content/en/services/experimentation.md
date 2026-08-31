@@ -9,16 +9,36 @@ categories: []
 
 {{< translation-note >}}
 
-Experimentation is our core service. Whether you're validating a new idea, testing a technology, or running a proof of concept, we offer three service models to match your team's needs and capacity: **Managed**, **Delegated**, and **Full-Service**. Each gives you access to secure, government-compliant cloud environments — the difference {{< needs-review >}}lies in how much support we provide and how costs are handled.{{< /needs-review >}}
+Experimentation is our core service. Whether you're validating a new idea, testing a technology, or running a proof of concept, we offer three service models to match your team's needs and capacity: **Managed**, **Delegated**, and **Full-Service**. Each gives you access to secure, government-compliant cloud environments — the difference lies in how much support we provide and how costs are handled.
 
 Experiments typically run between **3 and 12 months**, giving your team enough time to test, learn, and draw meaningful conclusions.
 
-{{< needs-review mode="block" >}}
-Expand on the experiment lifecycle — what happens at intake, during the experiment, and at the end (wind-down, path to production, etc.)? How does the lifecycle differ across Managed, Delegated, and Full-Service models? This could just be a link to the Journey section (Client)
-{{< /needs-review >}}
-{{< needs-review mode="block" >}}
-Add a very basic image / process that looks like this: Intake -> Kickoff -> Experiment -> Closeout
-{{< /needs-review >}}
+## Experiment Lifecycle
+
+```mermaid
+flowchart LR
+    kickoff@{ shape: stadium, label: "Kick-off" }
+    intake@{ shape: circle, label: "Intake" }
+    consultation@{ shape: hex, label: "Consultation" }
+    queue@{ shape: docs, label: "Queue" }
+    experiment@{shape: processes, label: "Experiment" }
+    closeout@{ shape: dbl-circ, label: "Close out" }
+
+    intake -.-> consultation
+    intake --> queue
+    consultation -.-> queue
+    queue --> kickoff
+    kickoff --> experiment
+    experiment --> closeout
+```
+
+Below is a very high-level overview of the typical experiment lifecycle. To read more about this process, please visit the [Client Journey]({{< globallink "about-us/client-journey" >}}) page.
+
+The process starts when you complete our [intake form](https://ltpms-sgpel.science.cloud-nuage.canada.ca/app/scie-p-intake#/welcome/english). We review your request to determine whether the experiment is a good fit for our service and may schedule a consultation to clarify your needs, goals, and preferred service model. If we have the capacity to begin right away, we will move ahead with the next steps. Otherwise, we will place your request in the queue and provide an estimated start date.
+
+When your experiment is ready to begin, we hold a kickoff meeting to review the terms and conditions, confirm the experiment's scope and requirements, and select the cloud service provider (CSP). We then create the cloud environment, determine who needs access, and agree on who should participate in recurring meetings. Throughout the experiment, we hold regular touchpoints to review progress, address questions, and adjust the work as needed.
+
+At close-out, you complete our Lessons Learned survey and provide an Executive Summary describing the experiment's results and key findings. We then decommission the cloud environment and, where appropriate, discuss next steps such as winding down the work or pursuing a path to production.
 
 ## Funding
 
@@ -27,6 +47,10 @@ How you pay for your experiment depends on the service model:
 - **Managed** — Generally centrally funded for smaller experiments. If your expected cloud spend is significant, a cost-recovery arrangement may apply.
 - **Delegated** — Cost-recovery. Your department covers the cloud costs associated with your experiment.
 - **Full-Service** — Cost-recovery. You bring the budget; we deliver the work.
+
+## Service Models
+
+Because every organization is unique, we feel that there's value in offering different levels of autonomy when it comes to managing the lifecycle of experiments. Most of our experiments are run via the Managed model, but we're seeing increased interest in
 
 ## Managed
 
@@ -49,11 +73,7 @@ Here's what that means for you:
 - **A familiar face closer to home.** Your delegated SME understands your department's context, priorities, and constraints. They can help you navigate the financial side of cloud experimentation, chart a path toward production, and connect you with the right people — whether that's within your department or across government — to unlock learning and innovation.
 - **Better innovation from within.** Having a delegated SME means your department builds its own cloud expertise over time. That knowledge doesn't disappear when a project ends — it stays in your team and benefits future initiatives.
 
-Interested in becoming a delegated department or SME? [Contact us]({{< globallink "about-us/contact-us" >}}) — we'd love to work with you to set that up.
-
-{{< needs-review mode="block" >}}
-Maybe add a few departments that already have a delegated base? Stats Can, DFO, PHAC, DRDC etc.?
-{{< /needs-review >}}
+If you're interested in becoming a delegated department or SME, please [contact us]({{< globallink "about-us/contact-us" >}}). We'd love to work with you in order to see how we can help.
 
 ## Full-Service
 
