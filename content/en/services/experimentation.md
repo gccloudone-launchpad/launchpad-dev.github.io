@@ -55,7 +55,7 @@ How you pay for your experiment depends on the service model:
 
 Because every organization is unique, we feel that there's value in offering different levels of autonomy when it comes to managing the lifecycle of experiments. Most of our experiments are run via the Managed model, but we're seeing increased interest in
 
-## Managed
+### Managed
 
 In the Managed model, we handle the heavy lifting so you don't have to. Think of us as your cloud landlord — we set up the building, maintain the plumbing, and make sure the fire exits are clearly marked. You get your own space to work in, without having to worry about what's going on behind the walls.
 
@@ -67,7 +67,7 @@ Here's what that looks like in practice:
 - **Full visibility into your spending.** Cloud costs can add up quickly if you're not paying attention. We give you clear, up-to-date information on what you're spending and why — keeping you informed and in control from a FinOps (financial operations) perspective. This applies whether you're using centrally funded resources or bringing your own budget to the table.
 - **Access to the full cloud catalogue.** Through our agreements with Google Cloud (GCP), Amazon Web Services (AWS), and Microsoft Azure, you get access to almost any service each provider offers — without having to navigate Government of Canada procurement processes or security assessments yourself. We've already done that work, so you can start using the services you need right away.
 
-## Delegated
+### Delegated
 
 In the Delegated model, your department takes on a more active role in supporting its own cloud experimenters. Rather than relying solely on our central team, a designated Subject Matter Expert (SME) within your department works alongside us to help your teams succeed.
 
@@ -78,7 +78,7 @@ Here's what that means for you:
 
 If you're interested in becoming a delegated department or SME, please [contact us]({{< globallink "about-us/contact-us" >}}). We'd love to work with you in order to see how we can help.
 
-## Full-Service
+### Full-Service
 
 Have a complex application or service you need to build or experiment with, but don't have the in-house resources or bandwidth to make it happen? The Full-Service model is designed for exactly that. You bring us the funding and the requirements — our cloud and development experts take care of the rest, from architecture and implementation to deployment and iteration.
 
