@@ -17,6 +17,9 @@ Experiments typically run between **3 and 12 months**, giving your team enough t
 
 ```mermaid
 flowchart LR
+
+    classDef default fill:#D7E5F5,stroke:#6584A6;
+
     kickoff@{ shape: stadium, label: "Kick-off" }
     intake@{ shape: circle, label: "Intake" }
     consultation@{ shape: hex, label: "Consultation" }
