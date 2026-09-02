@@ -86,6 +86,18 @@ This option is ideal for teams with a clear problem to solve but limited technic
 
 > Before submitting an intake request for a **Full-Service** experiment, please [reach out to us]({{< globallink "about-us/contact-us" >}}) directly. Our internal capacity is limited, and we want to make sure we can give your project the attention it deserves before committing to it.
 
-{{< needs-review mode="block" >}}
-Add a RACI table showing who is Responsible, Accountable, Consulted, and Informed for key activities (e.g. environment setup, security, billing, support) across the Managed, Delegated, and Full-Service models.
-{{< /needs-review >}}
+## Roles and Responsibilities
+
+The following RACI matrix summarizes the typical division of responsibilities. The exact arrangements are confirmed during kickoff.
+
+<!-- markdownlint-disable MD055 MD056 -->
+| Activity | Managed | Delegated | Full-Service |
+| --- | --- | --- | --- |
+| Environment setup | LaunchPad: **R/A**; Experiment team: **C** | LaunchPad: **R**; Department SME: **A/C**; Experiment team: **C** | LaunchPad: **R/A**; Experiment team: **C** |
+| Security and guardrails | LaunchPad: **R/A**; Experiment team: **C** | LaunchPad: **R/A**; Department SME: **C**; Experiment team: **I** | LaunchPad: **R/A**; Experiment team: **C** |
+| Billing and cost monitoring | LaunchPad: **R/A**; Experiment team: **I** | Department SME: **R/A**; LaunchPad: **C**; Experiment team: **I** | LaunchPad: **R**; Department: **A**; Experiment team: **I** |
+| Experiment support | LaunchPad: **R**; Experiment team: **A** | Department SME: **R**; Experiment team: **A**; LaunchPad: **C** | LaunchPad: **R**; Experiment team: **A** |
+{.raci-table}
+<!-- markdownlint-enable MD055 MD056 -->
+
+**R** = Responsible, **A** = Accountable, **C** = Consulted, **I** = Informed.

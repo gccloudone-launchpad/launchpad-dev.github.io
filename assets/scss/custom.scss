@@ -29,6 +29,53 @@ table.full-width {
   width: 100%;
 }
 
+table.raci-table {
+  border: 2px solid #252525;
+  border-collapse: separate;
+  border-spacing: 0;
+  overflow: hidden;
+
+  thead td {
+    background-color: #2d2f31;
+    border-color: #2d2f31;
+    color: #ffffff;
+    font-size: 1.05em;
+    text-align: center;
+    vertical-align: middle;
+  }
+
+  thead td:first-child {
+    background-color: #111111;
+    text-align: left;
+  }
+
+  tbody td {
+    background-color: #f4f5f6;
+    border-color: #d1d5d8;
+    vertical-align: top;
+  }
+
+  tbody td:first-child {
+    background-color: #e1e4e6;
+    font-weight: 700;
+  }
+
+  tbody td:nth-child(2) {
+    background-color: #e4f7b8;
+    border-left: 5px solid #80e000;
+  }
+
+  tbody td:nth-child(3) {
+    background-color: #fff0c7;
+    border-left: 5px solid #f0b429;
+  }
+
+  tbody td:nth-child(4) {
+    background-color: #dcecff;
+    border-left: 5px solid #147ff5;
+  }
+}
+
 body.character-limit table.full-width {
   width: var(--gcds-text-character-limit);
 }
