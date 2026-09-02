@@ -80,11 +80,11 @@ If you're interested in becoming a delegated department or SME, please [contact 
 
 ### Full-Service
 
-Have a complex application or service you need to build or experiment with, but don't have the in-house resources or bandwidth to make it happen? The Full-Service model is designed for exactly that. You bring us the funding and the requirements — our cloud and development experts take care of the rest, from architecture and implementation to deployment and iteration.
+Have a complex application or service you need to build or experiment with, but don't have the in-house resources or bandwidth to make it happen? The Full-Service model is designed for exactly that. You bring us the funding and the requirements, and our development experts take care of the rest, from architecture and implementation to deployment and iteration.
 
 This option is ideal for teams with a clear problem to solve but limited technical capacity to tackle it on their own. We work with you to understand what you need, and then we build it.
 
-> **Before submitting an intake request**, please [reach out to us]({{< globallink "about-us/contact-us" >}}) directly. Our internal capacity is limited, and we want to make sure we can give your project the attention it deserves before committing to it.
+> Before submitting an intake request for a **Full-Service** experiment, please [reach out to us]({{< globallink "about-us/contact-us" >}}) directly. Our internal capacity is limited, and we want to make sure we can give your project the attention it deserves before committing to it.
 
 {{< needs-review mode="block" >}}
 Add a RACI table showing who is Responsible, Accountable, Consulted, and Informed for key activities (e.g. environment setup, security, billing, support) across the Managed, Delegated, and Full-Service models.
