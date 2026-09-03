@@ -14,14 +14,6 @@ main:
     parent: services
     pageRef: /services/experimentation
     weight: 1
-  - name: Calcul sur demande
-    parent: services
-    pageRef: /services/calcul-sur-demande
-    weight: 2
-  - name: Consultation
-    parent: services
-    pageRef: /services/consultation
-    weight: 3
   - name: Feuille de route
     parent: services
     pageRef: /services/feuille-de-route
@@ -64,8 +56,8 @@ main:
     pageRef: /information/general
     weight: 1
   - name: Glossaire
-    parent: about
-    pageRef: /information/glossaire
+    parent: information
+    pageRef: /glossaire
     weight: 2
   - name: AWS
     identifier: information-aws
