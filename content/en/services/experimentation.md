@@ -17,7 +17,6 @@ Experiments typically run between **3 and 12 months**, giving your team enough t
 
 ```mermaid
 flowchart LR
-
     classDef default fill:#D7E5F5,stroke:#6584A6;
 
     kickoff@{ shape: stadium, label: "Kick-off" }
@@ -27,9 +26,8 @@ flowchart LR
     experiment@{shape: processes, label: "Experiment" }
     closeout@{ shape: dbl-circ, label: "Close out" }
 
-    intake -.-> consultation
     intake --> queue
-    consultation -.-> queue
+    queue -.-> consultation -.-> kickoff
     queue --> kickoff
     kickoff --> experiment
     experiment --> closeout
@@ -43,17 +41,20 @@ When your experiment is ready to begin, we hold a kickoff meeting to review the 
 
 At close-out, you complete our Lessons Learned survey and provide an Executive Summary describing the experiment's results and key findings. We then decommission the cloud environment and, where appropriate, discuss next steps such as winding down the work or pursuing a path to production.
 
-## Funding
-
-How you pay for your experiment depends on the service model:
-
-- **Managed** — Generally centrally funded for smaller experiments. If your expected cloud spend is significant, a cost-recovery arrangement may apply.
-- **Delegated** — Cost-recovery. Your department covers the cloud costs associated with your experiment.
-- **Full-Service** — Cost-recovery. You bring the budget; we deliver the work.
-
-## Service Models
+## Service Offerings
 
 Because every organization is unique, we feel that there's value in offering different levels of autonomy when it comes to managing the lifecycle of experiments. Most of our experiments are run via the Managed model, but we're seeing increased interest in
+
+### Delegated
+
+In the Delegated model, your department takes on a more active role in supporting its own cloud experimenters. Rather than relying solely on our central team, a designated Subject Matter Expert (SME) within your department works alongside us to help your teams succeed.
+
+Here's what that means for you:
+
+- **A familiar face closer to home.** Your delegated SME understands your department's context, priorities, and constraints. They can help you navigate the financial side of cloud experimentation, chart a path toward production, and connect you with the right people — whether that's within your department or across government — to unlock learning and innovation.
+- **Better innovation from within.** Having a delegated SME means your department builds its own cloud expertise over time. That knowledge doesn't disappear when a project ends — it stays in your team and benefits future initiatives.
+
+If you're interested in becoming a delegated department or SME, please [contact us]({{< globallink "about-us/contact-us" >}}). We'd love to work with you in order to see how we can help.
 
 ### Managed
 
@@ -67,17 +68,6 @@ Here's what that looks like in practice:
 - **Full visibility into your spending.** Cloud costs can add up quickly if you're not paying attention. We give you clear, up-to-date information on what you're spending and why — keeping you informed and in control from a FinOps (financial operations) perspective. This applies whether you're using centrally funded resources or bringing your own budget to the table.
 - **Access to the full cloud catalogue.** Through our agreements with Google Cloud (GCP), Amazon Web Services (AWS), and Microsoft Azure, you get access to almost any service each provider offers — without having to navigate Government of Canada procurement processes or security assessments yourself. We've already done that work, so you can start using the services you need right away.
 
-### Delegated
-
-In the Delegated model, your department takes on a more active role in supporting its own cloud experimenters. Rather than relying solely on our central team, a designated Subject Matter Expert (SME) within your department works alongside us to help your teams succeed.
-
-Here's what that means for you:
-
-- **A familiar face closer to home.** Your delegated SME understands your department's context, priorities, and constraints. They can help you navigate the financial side of cloud experimentation, chart a path toward production, and connect you with the right people — whether that's within your department or across government — to unlock learning and innovation.
-- **Better innovation from within.** Having a delegated SME means your department builds its own cloud expertise over time. That knowledge doesn't disappear when a project ends — it stays in your team and benefits future initiatives.
-
-If you're interested in becoming a delegated department or SME, please [contact us]({{< globallink "about-us/contact-us" >}}). We'd love to work with you in order to see how we can help.
-
 ### Full-Service
 
 Have a complex application or service you need to build or experiment with, but don't have the in-house resources or bandwidth to make it happen? The Full-Service model is designed for exactly that. You bring us the funding and the requirements, and our development experts take care of the rest, from architecture and implementation to deployment and iteration.
@@ -86,14 +76,29 @@ This option is ideal for teams with a clear problem to solve but limited technic
 
 > Before submitting an intake request for a **Full-Service** experiment, please [reach out to us]({{< globallink "about-us/contact-us" >}}) directly. Our internal capacity is limited, and we want to make sure we can give your project the attention it deserves before committing to it.
 
+## Funding
+
+How you pay for your experiment depends on the service model:
+
+- **Delegated** — Cost-recovery. Your department covers the cloud costs associated with your experiment.
+- **Managed** — Generally centrally funded for smaller experiments. If your expected cloud spend is significant, a cost-recovery arrangement may apply.
+- **Full-Service** — Cost-recovery. You bring the budget; we deliver the work.
+
 ## Roles and Responsibilities
 
 The following RACI matrix summarizes the typical division of responsibilities. The exact arrangements are confirmed during kickoff.
 
+{{< needs-review mode="block" >}}
+This table needs to be better reviewed to make sure the Activities, and "responsible" parties are right.
+
+It'll also probably have to be changed from a MD table, to a HTML/GCDS table so that we can style it properly.
+Might be able to do it via a Mermaid diagram too, but not sure.
+{{< /needs-review >}}
+
 <!-- markdownlint-disable MD055 MD056 -->
-| Activity | Managed | Delegated | Full-Service |
+| Activity | Delegated | Managed | Full-Service |
 | --- | --- | --- | --- |
-| Environment setup | LaunchPad: **R/A**; Experiment team: **C** | LaunchPad: **R**; Department SME: **A/C**; Experiment team: **C** | LaunchPad: **R/A**; Experiment team: **C** |
+| Environment setup | LaunchPad | LaunchPad | LaunchPad |
 | Security and guardrails | LaunchPad: **R/A**; Experiment team: **C** | LaunchPad: **R/A**; Department SME: **C**; Experiment team: **I** | LaunchPad: **R/A**; Experiment team: **C** |
 | Billing and cost monitoring | LaunchPad: **R/A**; Experiment team: **I** | Department SME: **R/A**; LaunchPad: **C**; Experiment team: **I** | LaunchPad: **R**; Department: **A**; Experiment team: **I** |
 | Experiment support | LaunchPad: **R**; Experiment team: **A** | Department SME: **R**; Experiment team: **A**; LaunchPad: **C** | LaunchPad: **R**; Experiment team: **A** |
