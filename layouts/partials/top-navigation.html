@@ -1,5 +1,6 @@
 <gcds-top-nav slot="menu" label="Top navigation" alignment="right">
   {{ $currentURL := (replace .RelPermalink "/" "" -1) }}
+  {{ $isPublic := default false .Page.Params.isPublic }}
   {{ range .Site.Menus.main }}
     {{ $menuURL := (replace .URL "/" "" -1) }}
     {{ $isActive := eq $currentURL $menuURL }}
@@ -23,7 +24,7 @@
     </gcds-nav-link>
     {{ end }}
   {{ end }}
-  {{ if hasPrefix .TranslationKey "private" }}
+  {{ if not $isPublic }}
     {{ range .Site.Menus.private }}
       {{ $menuURL := (replace .URL "/" "" -1) }}
       {{ $isActive := eq $currentURL $menuURL }}

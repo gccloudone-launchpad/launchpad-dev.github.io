@@ -49,12 +49,10 @@ private:
   # LEVEL 1
   - name: Tutorials
     identifier: tutorials
-    parent: private
     pageRef: /tutorials
     weight: 1
   - name: Information
     identifier: information
-    parent: private
     pageRef: /information
     weight: 2
 

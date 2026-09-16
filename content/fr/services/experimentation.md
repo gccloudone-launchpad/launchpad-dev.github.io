@@ -2,6 +2,7 @@
 title: Expérimentation
 description: "Essayer des choses et voir comment elles fonctionnent"
 translationKey: services/experimentation
+isPublic: true
 draft: false
 tags: []
 categories: []

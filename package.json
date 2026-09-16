@@ -4,6 +4,7 @@
   "version": "0.1.0",
   "license": "MIT",
   "author": "GCCO:LaunchPad",
+  "packageManager": "npm@9.8.1",
   "scripts": {
     "dev": "hugo server",
     "build": "hugo --gc --minify --templateMetrics --templateMetricsHints --forceSyncStatic",

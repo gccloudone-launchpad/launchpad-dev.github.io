@@ -2,6 +2,7 @@
 title: Feuille de route
 description: "Services que LaunchPad développe et pourrait offrir éventuellement."
 translationKey: services/roadmap
+isPublic: true
 draft: false
 tags: []
 categories: []

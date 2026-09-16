@@ -3,6 +3,7 @@ title: LaunchPad
 description: Fast, secure, and flexible cloud experimentation for government innovation
 translationKey: homePage
 draft: false
+isPublic: true
 ---
 
 ## Cutting-edge solutions to propel your experimentation

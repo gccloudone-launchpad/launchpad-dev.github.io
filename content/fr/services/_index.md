@@ -2,6 +2,7 @@
 title: Services
 description: Description des services offert
 translationKey: services
+isPublic: true
 draft: false
 tags: 
   - Services
