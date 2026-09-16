@@ -3,20 +3,14 @@
   // Files to lint
   // -------------------------------------------------------------------
   "globs": [
-    "**/*.md"
+    "content/**/*.md"
   ],
 
   // -------------------------------------------------------------------
   // Files/folders to always skip (Hugo specific)
   // -------------------------------------------------------------------
   "ignores": [
-    "**/node_modules/**",      // all dependencies
-    "public/**",               // Hugo build output
-    "resources/**",            // Hugo asset pipeline
-    "themes/**/exampleSite/**",// example content in themes
-    "**/.hugo_build.lock",     // Hugo lockfile
-    "**/.cache/**",
-    "**/dist/**"
+
   ],
 
   // -------------------------------------------------------------------
