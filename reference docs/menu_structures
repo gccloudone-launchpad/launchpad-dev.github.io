@@ -1,0 +1,47 @@
+```mermaid
+%%{init: {'theme': 'base', 'themeVariables': { 'cScale0': '#3b1f5c', 'cScale1': '#163d6b', 'cScale2': '#6b1f2a', 'cScaleLabel0': '#ffffff', 'cScaleLabel1': '#ffffff', 'cScaleLabel2': '#ffffff' }, 'themeCSS': '.mindmap-node circle { fill: #3b1f5c !important; stroke: #241238 !important; } .mindmap-node text { fill: #ffffff !important; } .mindmap-node-label, .nodeLabel, .nodeLabel p, foreignObject div { fill: #ffffff !important; color: #ffffff !important; }' }}%%
+mindmap
+ root((Launchpad public website))
+  📁 Public
+   📁 About Us
+    📄 Case Studies
+    📄 Contact Us
+   📁 Policies
+    📄 Audit and Accountability
+    📄 Authentication and Authoriziation
+    📄 Configuration Management
+    📄 Incident Management
+    📄 Open Source Software
+   📁 Services
+    📄 Experimentation
+    📄 Service Roadmap
+   📄 Glossary
+   📄 Terms & Conditions
+   📄 Test Page
+  📁 Private
+   📁 Information
+    📁 AWS
+    📁 GCP
+    📁 General
+     📄 List of available LLM models
+     📄 Code Repositories
+     📄 Cloud guardrails profiles and protected data differences
+     📄 Technical differences per data profiles
+   📁 Tutorials
+    📁 AWS
+     📄 IAM Roles
+     📄 Boundary Policies
+     📄 Understanding Core Services
+     📄 Get Connected
+    📁 Azure
+     📄 Understanding Core Services
+     📄 Get Connected
+    📁 GCP
+     📄 Understanding Core Services
+     📄 Get Connected
+    📁 General
+     📄 Adding Certificates to WSL
+     📄 Exempted Multi-Factor Authentication
+     📄 Setup Multi-Factor Authentication
+
+```
