@@ -2,6 +2,7 @@
 title: A Propos
 description: ""
 translationKey: about-us
+isPublic: true
 draft: false
 tags: []
 categories: []

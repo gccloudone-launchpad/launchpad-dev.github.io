@@ -3,6 +3,7 @@ title: About Us
 description: ""
 translationKey: about-us
 draft: false
+isPublic: true
 tags: []
 categories: []
 ---

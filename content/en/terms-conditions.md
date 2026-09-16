@@ -3,6 +3,7 @@ description: Terms & Conditions for use of LaunchPad
 title: Terms & Conditions
 translationKey: about-us/terms-and-conditions
 draft: false
+isPublic: true
 ---
 
 GC Cloud One LaunchPad provides a secure, cloud-based environment for testing and exploring new cloud computing technologies. This service is strictly for development, evaluation, and research purposes for non-operational workloads. Users must comply with the following terms and ensure that anyone accessing their work or experiment environment adheres to them.  These Terms & Conditions are in addition to all pre-existing GC or departmental acceptable use policies.

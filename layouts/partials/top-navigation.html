@@ -1,5 +1,6 @@
 <gcds-top-nav slot="menu" label="Top navigation" alignment="right">
   {{ $currentURL := (replace .RelPermalink "/" "" -1) }}
+  {{ $isPublic := default false .Page.Params.isPublic }}
   {{ range .Site.Menus.main }}
     {{ $menuURL := (replace .URL "/" "" -1) }}
     {{ $isActive := eq $currentURL $menuURL }}
@@ -21,6 +22,31 @@
       {{ if and $isActive (not (eq .Params.slot "home")) }}current{{ end }}>
       {{ with .Pre }}{{ . }}{{ end }}{{ .Name }}
     </gcds-nav-link>
+    {{ end }}
+  {{ end }}
+  {{ if not $isPublic }}
+    {{ range .Site.Menus.private }}
+      {{ $menuURL := (replace .URL "/" "" -1) }}
+      {{ $isActive := eq $currentURL $menuURL }}
+      {{ if .HasChildren }}
+        <gcds-nav-group open-trigger="{{ .Name }}" menu-label="{{ .Name }}">
+          {{ range .Children }}
+            {{ $childMenuURL := (replace .URL "/" "" -1) }}
+            <gcds-nav-link
+              href="{{ .URL }}"
+              {{ if eq $currentURL $childMenuURL }}current{{ end }}>
+              {{ .Name }}
+            </gcds-nav-link>
+          {{ end }}
+        </gcds-nav-group>
+      {{ else }}
+      <gcds-nav-link
+        href="{{ .URL }}"
+        slot="{{ .Params.slot }}"
+        {{ if and $isActive (not (eq .Params.slot "home")) }}current{{ end }}>
+        {{ with .Pre }}{{ . }}{{ end }}{{ .Name }}
+      </gcds-nav-link>
+      {{ end }}
     {{ end }}
   {{ end }}
 </gcds-top-nav>

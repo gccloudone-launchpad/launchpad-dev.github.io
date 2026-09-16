@@ -3,6 +3,7 @@ title: Configuration Management
 description: "Ensures that Information Technology (IT) resources are inventoried and configured in compliance with IT security policies, standards, and procedures."
 translationKey: policy/configuration-management
 draft: false
+isPublic: true
 tags: 
   - Policy
 categories: 

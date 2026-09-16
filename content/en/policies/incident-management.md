@@ -3,6 +3,7 @@ title: Incident Management
 description: "How we handle incidents"
 translationKey: policy/incident-management
 draft: false
+isPublic: true
 tags: 
   - Policy
 categories: 

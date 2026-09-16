@@ -3,6 +3,7 @@ title: Authentication and Authoriziation
 description: ""
 translationKey: policy/authentication-and-authorization
 draft: false
+isPublic: true
 tags: 
   - Policy
 categories: 

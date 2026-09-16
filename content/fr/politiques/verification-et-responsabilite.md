@@ -2,6 +2,7 @@
 title: Vérification et Responsabilité
 description: ""
 translationKey: policy/audit-and-accoutability
+isPublic: true
 draft: false
 tags: 
   - Politique

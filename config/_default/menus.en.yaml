@@ -4,12 +4,15 @@ main:
     pageRef: /
     weight: 1
     identifier: home
-
-#TOP LEVEL
   - name: Services
     identifier: services
     weight: 2
-  # LEVEL 1
+  - name: About
+    identifier: about
+    weight: 3
+
+
+  # LEVEL 1 - Services
   - name: Experimentation
     parent: services
     pageRef: /services/experimentation
@@ -19,11 +22,7 @@ main:
     pageRef: /services/roadmap
     weight: 10
 
-#TOP LEVEL
-  - name: About
-    identifier: about
-    weight: 3
-  # LEVEL 1
+  # LEVEL 1 - About Us
   - name: About Us
     parent: about
     pageRef: /about-us
@@ -45,41 +44,19 @@ main:
     pageRef: /about-us/contact-us
     weight: 5
 
+private:
 #TOP LEVEL
-  - name: Information
-    identifier: information
-    weight: 4
   # LEVEL 1
-  - name: General
-    identifier: information-general
-    parent: information
-    pageRef: /information/general
-    weight: 1
-  - name: Glossary
-    parent: information
-    pageRef: /glossary
-    weight: 2
-  - name: AWS
-    identifier: information-aws
-    parent: information
-    pageRef: /information/aws
-    weight: 3
-  - name: Azure
-    identifier: information-azure
-    parent: information
-    pageRef: /information/azure
-    weight: 4
-  - name: GCP
-    identifier: information-gcp
-    parent: information
-    pageRef: /information/gcp
-    weight: 5
-
-#TOP LEVEL
   - name: Tutorials
     identifier: tutorials
-    weight: 5
-  # LEVEL 1  
+    pageRef: /tutorials
+    weight: 1
+  - name: Information
+    identifier: information
+    pageRef: /information
+    weight: 2
+
+  # LEVEL 2 - Tutorials
   - name: General
     identifier: tutorials-general
     parent: tutorials
@@ -99,4 +76,26 @@ main:
     identifier: tutorials-gcp
     parent: tutorials
     pageRef: /tutorials/gcp
+    weight: 4
+
+  # LEVEL 2 - Information
+  - name: General
+    identifier: information-general
+    parent: information
+    pageRef: /information/general
+    weight: 1
+  - name: AWS
+    identifier: information-aws
+    parent: information
+    pageRef: /information/aws
+    weight: 2
+  - name: Azure
+    identifier: information-azure
+    parent: information
+    pageRef: /information/azure
+    weight: 3
+  - name: GCP
+    identifier: information-gcp
+    parent: information
+    pageRef: /information/gcp
     weight: 4

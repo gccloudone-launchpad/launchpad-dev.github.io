@@ -5,6 +5,7 @@ translationKey: services/experimentation
 draft: false
 tags: []
 categories: []
+isPublic: true
 ---
 
 {{< translation-note >}}

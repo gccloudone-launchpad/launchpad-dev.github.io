@@ -3,6 +3,7 @@ title: Open Source Software
 description: "Links to standards and guidance on open source software"
 translationKey: policies/open-source-software
 draft: false
+isPublic: true
 tags: 
   - Policy
 categories: 
