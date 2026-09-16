@@ -14,14 +14,6 @@ main:
     parent: services
     pageRef: /services/experimentation
     weight: 1
-  - name: On-Demand Compute
-    parent: services
-    pageRef: /services/ondemand-compute
-    weight: 2
-  - name: Advisory
-    parent: services
-    pageRef: /services/advisory
-    weight: 3
   - name: Roadmap
     parent: services
     pageRef: /services/roadmap
@@ -64,8 +56,8 @@ main:
     pageRef: /information/general
     weight: 1
   - name: Glossary
-    parent: about
-    pageRef: /information/glossary
+    parent: information
+    pageRef: /glossary
     weight: 2
   - name: AWS
     identifier: information-aws

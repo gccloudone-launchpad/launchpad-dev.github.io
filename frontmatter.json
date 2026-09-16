@@ -99,6 +99,33 @@
       "description": "",
       "body": "{{< translation-note >}}",
       "fields": []
+    },
+    "Needs Review": {
+      "description": "",
+      "body": [
+        "{{< needs-review mode=\"[[Mode]]\" >}}",
+        "[[Content]]",
+        "{{< /needs-review >}}"
+      ],
+      "fields": [
+        {
+          "name": "Mode",
+          "title": "Mode",
+          "type": "choice",
+          "choices": [
+            "block",
+            "inline",
+          ],
+          "default": "inline"
+        },
+        {
+          "name": "Content",
+          "title": "Content",
+          "type": "string",
+          "single": true,
+          "default": ""
+        }
+      ]
     }
   }
 }
