@@ -4,33 +4,31 @@ main:
     pageRef: /
     weight: 1
     identifier: home
-
-#TOP LEVEL
   - name: Services
     identifier: services
     weight: 2
-  # LEVEL 1
+  - name: A Propos
+    identifier: about
+    weight: 3
+
+  # LEVEL 1 - Services
   - name: Experimentation
     parent: services
     pageRef: /services/experimentation
     weight: 1
-  - name: Calcul sur demande
+  - name: Feuille de route
     parent: services
-    pageRef: /services/calcul-sur-demande
-    weight: 2
+    pageRef: /services/feuille-de-route
+    weight: 10
 
-#TOP LEVEL
-  - name: A Propos
-    identifier: about
-    weight: 3
-  # LEVEL 1
+  # LEVEL 1 - A Propos
   - name: A Propos
     parent: about
     pageRef: /a-propos
     weight: 1
-  - name: Glossaire
+  - name: Études de cas
     parent: about
-    pageRef: /glossaire
+    pageRef: /a-propos/etudes-de-cas
     weight: 2
   - name: Termes & Conditions
     parent: about
@@ -42,8 +40,39 @@ main:
     weight: 4
   - name: Contactez Nous
     parent: about
-    pageRef: /contactez-nous
+    pageRef: /a-propos/contactez-nous
     weight: 5
+
+
+  - name: Information
+    identifier: information
+    weight: 4
+  # LEVEL 1
+  - name: General
+    identifier: information-general
+    parent: information
+    pageRef: /information/general
+    weight: 1
+  - name: Glossaire
+    parent: information
+    pageRef: /glossaire
+    weight: 2
+  - name: AWS
+    identifier: information-aws
+    parent: information
+    pageRef: /information/aws
+    weight: 3
+  - name: Azure
+    identifier: information-azure
+    parent: information
+    pageRef: /information/azure
+    weight: 4
+  - name: GCP
+    identifier: information-gcp
+    parent: information
+    pageRef: /information/gcp
+    weight: 5
+
 
 #TOP LEVEL
   - name: Tutoriels
@@ -51,18 +80,62 @@ main:
     pageRef: /tutoriels
     weight: 4
 
+
 private:
 #TOP LEVEL
-  - name: Pages Prive
-    pageRef: /prive
-    weight: 1
-    identifier: prive
-    # LEVEL 1
+  # LEVEL 1
   - name: Tutoriels
-    parent: prive
+    identifier: tutoriels
+    parent: private
     pageRef: /tutoriels
     weight: 1
-  - name: Foobar
-    parent: prive
-    pageRef: /prive/foobar
+  - name: Information
+    identifier: information
+    parent: private
+    pageRef: /information
     weight: 2
+
+  # LEVEL 2 - Tutorials
+  - name: General
+    identifier: tutoriels-general
+    parent: tutoriels
+    pageRef: /tutoriels/general
+    weight: 1
+  - name: AWS
+    identifier: tutoriels-aws
+    parent: tutoriels
+    pageRef: /tutoriels/aws
+    weight: 2
+  - name: Azure
+    identifier: tutoriels-azure
+    parent: tutoriels
+    pageRef: /tutoriels/azure
+    weight: 3
+  - name: GCP
+    identifier: tutoriels-gcp
+    parent: tutoriels
+    pageRef: /tutoriels/gcp
+    weight: 4
+
+  # LEVEL 2 - Information
+  - name: General
+    identifier: information-general
+    parent: information
+    pageRef: /information/general
+    weight: 1
+  - name: AWS
+    identifier: information-aws
+    parent: information
+    pageRef: /information/aws
+    weight: 2
+  - name: Azure
+    identifier: information-azure
+    parent: information
+    pageRef: /information/azure
+    weight: 3
+  - name: GCP
+    identifier: information-gcp
+    parent: information
+    pageRef: /information/gcp
+    weight: 4
+

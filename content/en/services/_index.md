@@ -9,10 +9,15 @@ categories:
   - Services
 ---
 
-## This thing
+## Experiments
 
-What is "this thing"
+Talk about our core/primary service being experimentation, and the various flavours this comes in.
 
-## That Thing
+Managed, Delegated, Full-Service
 
-That thing! Tell me more!!11
+Talk about funding
+Delegated & Full Service are cost recovery
+Managed is generally centrally funded for smaller costs, but might be cost-recovery if they expect a lot of cloud burn
+Maybe have a calculator showing Class D estimate
+Mention the experiment lifecycle, and how each service model is slightly different
+Maybe have a RACI table that explains who's responsible for what in each model

@@ -1,7 +1,7 @@
 ---
 description: Terms & Conditions for use of LaunchPad
 title: Terms & Conditions
-translationKey: terms-and-conditions
+translationKey: about-us/terms-and-conditions
 draft: false
 ---
 
