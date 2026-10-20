@@ -21,6 +21,7 @@ SIUGC Rampe de Lacement priorise les besoins d'innovation et d'experimentation a
   - Microsoft Azure
   - Amazon Web Services (AWS)
   - Google Cloud Platform (GCP)
+  - Oracle Cloud Infrastructure (OCI)
 - Évaluez et débloquez des solutions cloud de pointe conçues pour résoudre vos défis scientifiques.
 - Bénéficiez de l'accès à nos experts en la matière qui fournissent des conseils personnalisés et un soutien, en s'assurant que vos expériences et preuves de concept sont optimisées pour le succès.
 - Collaborez n'importe où, avec n'importe qui, à tout moment sur une plateforme du GC qui permet aux scientifiques fédéraux, aux chercheurs et aux parties prenantes externes de travailler ensemble au-delà des frontières départementales.

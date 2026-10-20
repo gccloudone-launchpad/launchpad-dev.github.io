@@ -21,7 +21,8 @@ GCCO LaunchPad prioritizes innovation and experimentation with:
 - Immerse yourself in a 3-9 month experimental journey using the leading cloud platforms.
   - Microsoft Azure
   - Amazon Web Services (AWS)
-  - Google Cloud Platform (GCP).
+  - Google Cloud Platform (GCP)
+  - Oracle Cloud Infrastructure (OCI)
 - Evaluate and unlock cutting-edge solutions tailored to solve your specific challenges.
 - Benefit from access to our subject matter experts who provide tailored guidance and support, ensuring that your experiments and proofs of concept are optimized for success.
 - Collaborate anywhere, anytime, with anyone on a GC platform that allows everyone to work together across organization boundaries.
